@@ -1624,7 +1624,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     debug: "env",
     cdn: {"js":{"app":"/js/app.js","parallax":"/js/plugins/parallax.js","rightMenu":"/js/plugins/rightMenu.js","rightMenus":"/js/plugins/rightMenus.js","sites":"/js/plugins/tags/sites.js","friends":"/js/plugins/tags/friends.js","contributors":"/js/plugins/tags/contributors.js","search":"/js/search/hexo.js"},"css":{"style":"/css/style.css"}},
     default: {"avatar":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/avatar/round/3442075.svg","link":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/cover/76b86c0226ffd.svg","image":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date(1725155456638),
+    lastupdate: new Date(1725418235447),
     sidebar: {
       for_page: ["blogger","category","tagcloud","donate","text"],
       for_post: ["toc"],
@@ -2412,6 +2412,10 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
         
           
         
+          
+        
+          
+        
       
     
     
@@ -2419,7 +2423,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
         
           <div class='post-wrapper'>
             <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="http://schema.org/Article" >
-  <link itemprop="mainEntityOfPage" href="http://example.com/2024/08/30/newstart-week1/">
+  <link itemprop="mainEntityOfPage" href="http://example.com/2024/09/02/iamorange--fmt2__got-it/">
   <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
     <meta itemprop="name" content="Hexo">
   </span>
@@ -2437,8 +2441,126 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   
     
     <h2 class="article-title"  itemprop="name headline">
-      <a href="/2024/08/30/newstart-week1/"  itemprop="url">
-        Newstart week1
+      <a href="/2024/09/02/iamorange--fmt2__got-it/"  itemprop="url">
+        Sep 2, 2024
+      </a>
+    </h2>
+  
+  <div class='md article-desc' itemprop="articleBody">
+    
+      
+        fmt2checksec一下，开了pie保护，nx保护运行一遍瞧瞧，有格式化字符串漏洞丢ida里反编译看看，可以看到，当参数a等于’deadeef’,就可以执行sys，看看a的位置吧进gdb调试一下吧，可以看到main的地址存放在栈中，可利用格式化字符串漏洞泄露出main 的地址，计算出基地址，加上参数a的偏移量，就可以获取参数a的真实地址，再利用利用格式化字符串漏洞往里写入’deadbee...
+      
+    
+  </div>
+  
+    <div class='meta-v3' line_style='solid'>
+      <div>
+        
+        <time itemprop="dateCreated datePublished" datetime="2024-09-02T15:14:02+08:00">2024-09-02</time>
+        
+      </div>
+      
+        <div>
+          <a class='readmore' href='/2024/09/02/iamorange--fmt2__got-it/' itemprop="url">
+            Read More
+          </a>
+        </div>
+      
+    </div>
+  
+
+</div>
+
+          </div>
+        
+      
+        
+          <div class='post-wrapper'>
+            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="http://schema.org/Article" >
+  <link itemprop="mainEntityOfPage" href="http://example.com/2024/09/01/Newstar_week2/">
+  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+    <meta itemprop="name" content="Hexo">
+  </span>
+  <span hidden itemprop="post" itemscope itemtype="http://schema.org/Post">
+    <meta itemprop="name" content="Hexo">
+    <meta itemprop="description" content="">
+  </span>
+  
+  
+  
+    <span hidden>
+      <meta itemprop="image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
+    </span>
+  
+  
+    
+    <h2 class="article-title"  itemprop="name headline">
+      <a href="/2024/09/01/Newstar_week2/"  itemprop="url">
+        Sep 1, 2024
+      </a>
+    </h2>
+  
+  <div class='md article-desc' itemprop="articleBody">
+    
+      
+        Newstar_week2ret2libc简单的看看开了什么保护吧，没开pie
+
+运行一下看看
+
+丢ida里反编译看看，可以栈溢出，很普通的ret2libc
+
+
+以下是exp
+1234567891011121314151617181920212223242526272829303132from pwn import *from LibcSearcher import LibcSearcher...
+      
+    
+  </div>
+  
+    <div class='meta-v3' line_style='solid'>
+      <div>
+        
+        <time itemprop="dateCreated datePublished" datetime="2024-09-01T16:32:10+08:00">2024-09-01</time>
+        
+      </div>
+      
+        <div>
+          <a class='readmore' href='/2024/09/01/Newstar_week2/' itemprop="url">
+            Read More
+          </a>
+        </div>
+      
+    </div>
+  
+
+</div>
+
+          </div>
+        
+      
+        
+          <div class='post-wrapper'>
+            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="http://schema.org/Article" >
+  <link itemprop="mainEntityOfPage" href="http://example.com/2024/08/30/Newstar-week1/">
+  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+    <meta itemprop="name" content="Hexo">
+  </span>
+  <span hidden itemprop="post" itemscope itemtype="http://schema.org/Post">
+    <meta itemprop="name" content="Hexo">
+    <meta itemprop="description" content="">
+  </span>
+  
+  
+  
+    <span hidden>
+      <meta itemprop="image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
+    </span>
+  
+  
+    
+    <h2 class="article-title"  itemprop="name headline">
+      <a href="/2024/08/30/Newstar-week1/"  itemprop="url">
+        Newstar week1
       </a>
     </h2>
   
@@ -2446,8 +2568,9 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     
       
         
-Ret2text很简单的栈溢出，checksec一下64位，没开pie，运行一下看看没什么特殊的，直接丢ida里反编译看一眼很明显的栈溢出，溢出大小为0x20+0x8，直接开始简单的脚本攻击以下是exp
-1234567891011121314151617from pwn import *#p = process([&#x27;./Ret2text&#x27;])p = remote(&#x...
+Ret2text很简单的栈溢出，checksec一下
+64位，没开pie，运行一下看看没什么特殊的，直接丢ida里反编译看一眼很明显的栈溢出，溢出大小为0x20+0x8，直接开始简单的脚本攻击以下是exp
+1234567891011121314151617from pwn import *#p = process([&#x27;./Ret2text&#x27;])p = remote(&#...
       
     
   </div>
@@ -2468,7 +2591,7 @@ Ret2text很简单的栈溢出，checksec一下64位，没开pie，运行一下�
       </div>
       
         <div>
-          <a class='readmore' href='/2024/08/30/newstart-week1/' itemprop="url">
+          <a class='readmore' href='/2024/08/30/Newstar-week1/' itemprop="url">
             Read More
           </a>
         </div>

