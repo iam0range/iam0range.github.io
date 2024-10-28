@@ -1624,7 +1624,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     debug: "env",
     cdn: {"js":{"app":"/js/app.js","parallax":"/js/plugins/parallax.js","rightMenu":"/js/plugins/rightMenu.js","rightMenus":"/js/plugins/rightMenus.js","sites":"/js/plugins/tags/sites.js","friends":"/js/plugins/tags/friends.js","contributors":"/js/plugins/tags/contributors.js","search":"/js/search/hexo.js"},"css":{"style":"/css/style.css"}},
     default: {"avatar":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/avatar/round/3442075.svg","link":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/cover/76b86c0226ffd.svg","image":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date(1726192556014),
+    lastupdate: new Date(1730087595256),
     sidebar: {
       for_page: ["blogger","category","tagcloud","donate","text"],
       for_post: ["toc"],
@@ -2437,7 +2437,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
         栈迁移当可操控的栈空间不多时可以尝试
 原理在x64架构下，栈空间通过rsp和rbp寄存器进行标识，在函数执行的开始时，会执行call指令，在函数结束时，会执行leave ret返回
-12345678910111213141516函数调用时栈空间操作的最基本情况 -&gt; 函数调用：callmov %rsp,%rbppush %eip# 函数返回地址压入栈内，此时rsp自动减去0x8push...
+123456789101112131415函数调用时栈空间操作的最基本情况 -&gt; 函数调用：callpush eip# 函数返回地址压入栈内，此时rsp自动减去0x8push rbp        # 保存...
       
     
   </div>
@@ -2574,9 +2574,14 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       <ul class="entry navigation">
         
           <li><a class="flat-box"
+            title="/categories/note/" href="/categories/note/"
+            active-action="action-categoriesnote"
+            ><div class='name'>note</div><div class='badge'>(1)</div></a></li>
+        
+          <li><a class="flat-box"
             title="/categories/write-up/" href="/categories/write-up/"
             active-action="action-categorieswrite-up"
-            ><div class='name'>write up</div><div class='badge'>(4)</div></a></li>
+            ><div class='name'>write up</div><div class='badge'>(5)</div></a></li>
         
           <li><a class="flat-box"
             title="/categories/%E7%9F%A5%E8%AF%86%E5%88%86%E4%BA%AB/" href="/categories/%E7%9F%A5%E8%AF%86%E5%88%86%E4%BA%AB/"
@@ -2606,7 +2611,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
 
     <div class='content'>
-      <a href="/tags/write-up/" style="font-size: 24px; color: #555">write up</a> <a href="/tags/%E5%A4%8D%E7%8E%B0/" style="font-size: 19px; color: #777">复现</a> <a href="/tags/%E6%AF%94%E8%B5%9B/" style="font-size: 14px; color: #999">比赛</a> <a href="/tags/%E7%9F%A5%E8%AF%86%E5%88%86%E4%BA%AB/" style="font-size: 14px; color: #999">知识分享</a>
+      <a href="/tags/note/" style="font-size: 17.33px; color: #828282">note</a> <a href="/tags/write-up/" style="font-size: 24px; color: #555">write up</a> <a href="/tags/%E5%A4%8D%E7%8E%B0/" style="font-size: 20.67px; color: #6c6c6c">复现</a> <a href="/tags/%E6%AF%94%E8%B5%9B/" style="font-size: 17.33px; color: #828282">比赛</a> <a href="/tags/%E7%9F%A5%E8%AF%86%E5%88%86%E4%BA%AB/" style="font-size: 14px; color: #999">知识分享</a>
     </div>
   </section>
 
