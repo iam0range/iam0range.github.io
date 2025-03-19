@@ -1,25 +1,37 @@
 {
     "version": "https://jsonfeed.org/version/1",
-    "title": "Valaxy Theme Yun",
-    "home_page_url": "https://valaxy.site/",
-    "feed_url": "https://valaxy.site/feed.json",
-    "description": "Valaxy Theme Yun Preview.",
-    "icon": "https://valaxy.site/valaxy-logo.png",
+    "title": "iam0range",
+    "home_page_url": "iam0range.github.io/",
+    "feed_url": "iam0range.github.io/feed.json",
+    "description": "record everything",
+    "icon": "http://q.qlogo.cn/headimg_dl?dst_uin=3081999683&spec=640&img_type=jpg",
     "author": {
-        "name": "云游君",
-        "url": "https://valaxy.site"
+        "name": "iam0range",
+        "url": "iam0range.github.io"
     },
     "items": [
         {
             "id": "",
-            "content_html": "<h2>Valaxy</h2>\n<p>Next Generation Static Blog Framework.</p>\n<p>Write your first post!</p>\n<h2>Usage</h2>\n<p>Modify `valaxy</p>\n<br/><p>访问 <a href=\"https://valaxy.site/posts/hello-valaxy\" target=\"_blank\">https://valaxy.site/posts/hello-valaxy</a> 阅读全文。</p>",
-            "url": "https://valaxy.site/posts/hello-valaxy",
-            "title": "Hello, Valaxy!",
-            "date_modified": "2022-04-01T00:00:00.000Z",
-            "date_published": "2022-04-01T00:00:00.000Z",
+            "content_html": "<h1>复现</h1>\n<h1>hxpctf</h1>\n<h2>不开保护</h2>\n<p>关闭内核中所有保护,完成漏洞利用</p>\n<h3><a href=\"http://run.sh\">run.sh</a></h3>\n<p>在<code>append</code>使用使用<code>nosmap</code>、<code>nosemp</code>、`n</p>\n<br/><p>访问 <a href=\"iam0range.github.io/posts/kernel_wp\" target=\"_blank\">iam0range.github.io/posts/kernel_wp</a> 阅读全文。</p>",
+            "url": "iam0range.github.io/posts/kernel_wp",
+            "title": "kernel_wp",
+            "date_modified": "2025-03-19T00:00:00.000Z",
+            "date_published": "2025-03-19T00:00:00.000Z",
             "author": {
-                "name": "云游君",
-                "url": "https://valaxy.site"
+                "name": "iam0range",
+                "url": "iam0range.github.io"
+            }
+        },
+        {
+            "id": "",
+            "content_html": "<h1>用户态缺页处理</h1>\n<p>如何利用 Linux 的 <strong>userfaultfd</strong> 机制，在用户空间处理缺页异常（page fault）。</p>\n<hr>\n<h2>1. 整体概述</h2>\n<p>代</p>\n<br/><p>访问 <a href=\"iam0range.github.io/posts/用户态缺页处理\" target=\"_blank\">iam0range.github.io/posts/用户态缺页处理</a> 阅读全文。</p>",
+            "url": "iam0range.github.io/posts/用户态缺页处理",
+            "title": "用户态缺页处理",
+            "date_modified": "2025-03-19T00:00:00.000Z",
+            "date_published": "2025-03-19T00:00:00.000Z",
+            "author": {
+                "name": "iam0range",
+                "url": "iam0range.github.io"
             }
         }
     ]

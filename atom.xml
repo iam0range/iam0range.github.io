@@ -1,36 +1,55 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>https://valaxy.site/</id>
-    <title>Valaxy Theme Yun</title>
-    <updated>2025-03-18T15:39:52.264Z</updated>
+    <id>iam0range.github.io/</id>
+    <title>iam0range</title>
+    <updated>2025-03-19T07:46:10.259Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <author>
-        <name>云游君</name>
+        <name>iam0range</name>
         <email>i@valaxy.site</email>
-        <uri>https://valaxy.site</uri>
+        <uri>iam0range.github.io</uri>
     </author>
-    <link rel="alternate" href="https://valaxy.site/"/>
-    <link rel="self" href="https://valaxy.site/atom.xml"/>
-    <subtitle>Valaxy Theme Yun Preview.</subtitle>
-    <logo>https://valaxy.site/valaxy-logo.png</logo>
-    <icon>https://valaxy.site/favicon.svg</icon>
-    <rights>CC BY-NC-SA 4.0 2025 © 云游君</rights>
+    <link rel="alternate" href="iam0range.github.io/"/>
+    <link rel="self" href="iam0range.github.io/atom.xml"/>
+    <subtitle>record everything</subtitle>
+    <logo>http://q.qlogo.cn/headimg_dl?dst_uin=3081999683&amp;spec=640&amp;img_type=jpg</logo>
+    <icon>iam0range.github.io/favicon.svg</icon>
+    <rights>CC BY-NC-SA 4.0 2025 © iam0range</rights>
     <entry>
-        <title type="html"><![CDATA[Hello, Valaxy!]]></title>
-        <id>https://valaxy.site/posts/hello-valaxy</id>
-        <link href="https://valaxy.site/posts/hello-valaxy"/>
-        <updated>2022-04-01T00:00:00.000Z</updated>
-        <content type="html"><![CDATA[<h2>Valaxy</h2>
-<p>Next Generation Static Blog Framework.</p>
-<p>Write your first post!</p>
-<h2>Usage</h2>
-<p>Modify `valaxy</p>
-<br/><p>访问 <a href="https://valaxy.site/posts/hello-valaxy" target="_blank">https://valaxy.site/posts/hello-valaxy</a> 阅读全文。</p>]]></content>
+        <title type="html"><![CDATA[kernel_wp]]></title>
+        <id>iam0range.github.io/posts/kernel_wp</id>
+        <link href="iam0range.github.io/posts/kernel_wp"/>
+        <updated>2025-03-19T00:00:00.000Z</updated>
+        <content type="html"><![CDATA[<h1>复现</h1>
+<h1>hxpctf</h1>
+<h2>不开保护</h2>
+<p>关闭内核中所有保护,完成漏洞利用</p>
+<h3><a href="http://run.sh">run.sh</a></h3>
+<p>在<code>append</code>使用使用<code>nosmap</code>、<code>nosemp</code>、`n</p>
+<br/><p>访问 <a href="iam0range.github.io/posts/kernel_wp" target="_blank">iam0range.github.io/posts/kernel_wp</a> 阅读全文。</p>]]></content>
         <author>
-            <name>云游君</name>
+            <name>iam0range</name>
             <email>i@valaxy.site</email>
-            <uri>https://valaxy.site</uri>
+            <uri>iam0range.github.io</uri>
         </author>
-        <published>2022-04-01T00:00:00.000Z</published>
+        <published>2025-03-19T00:00:00.000Z</published>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[用户态缺页处理]]></title>
+        <id>iam0range.github.io/posts/用户态缺页处理</id>
+        <link href="iam0range.github.io/posts/用户态缺页处理"/>
+        <updated>2025-03-19T00:00:00.000Z</updated>
+        <content type="html"><![CDATA[<h1>用户态缺页处理</h1>
+<p>如何利用 Linux 的 <strong>userfaultfd</strong> 机制，在用户空间处理缺页异常（page fault）。</p>
+<hr>
+<h2>1. 整体概述</h2>
+<p>代</p>
+<br/><p>访问 <a href="iam0range.github.io/posts/用户态缺页处理" target="_blank">iam0range.github.io/posts/用户态缺页处理</a> 阅读全文。</p>]]></content>
+        <author>
+            <name>iam0range</name>
+            <email>i@valaxy.site</email>
+            <uri>iam0range.github.io</uri>
+        </author>
+        <published>2025-03-19T00:00:00.000Z</published>
     </entry>
 </feed>
