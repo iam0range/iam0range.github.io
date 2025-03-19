@@ -12,9 +12,9 @@
     "items": [
         {
             "id": "",
-            "content_html": "<h1>复现</h1>\n<h1>hxpctf</h1>\n<h2>不开保护</h2>\n<p>关闭内核中所有保护,完成漏洞利用</p>\n<h3><a href=\"http://run.sh\">run.sh</a></h3>\n<p>在<code>append</code>使用使用<code>nosmap</code>、<code>nosemp</code>、`n</p>\n<br/><p>访问 <a href=\"iam0range.github.io/posts/kernel_wp\" target=\"_blank\">iam0range.github.io/posts/kernel_wp</a> 阅读全文。</p>",
-            "url": "iam0range.github.io/posts/kernel_wp",
-            "title": "kernel_wp",
+            "content_html": "<h1>kernel_pwn中uffd机制的利用</h1>\n<p>如何利用 Linux 的 <strong>userfaultfd</strong> 机制，在用户空间处理缺页异常（page fault）。</p>\n<hr>\n<h2></h2>\n<br/><p>访问 <a href=\"iam0range.github.io/posts/kernel_pwn中uffd机制的利用\" target=\"_blank\">iam0range.github.io/posts/kernel_pwn中uffd机制的利用</a> 阅读全文。</p>",
+            "url": "iam0range.github.io/posts/kernel_pwn中uffd机制的利用",
+            "title": "kernel_pwn中uffd机制的利用",
             "date_modified": "2025-03-19T00:00:00.000Z",
             "date_published": "2025-03-19T00:00:00.000Z",
             "author": {
@@ -24,9 +24,9 @@
         },
         {
             "id": "",
-            "content_html": "<h1>用户态缺页处理</h1>\n<p>如何利用 Linux 的 <strong>userfaultfd</strong> 机制，在用户空间处理缺页异常（page fault）。</p>\n<hr>\n<h2>1. 整体概述</h2>\n<p>代</p>\n<br/><p>访问 <a href=\"iam0range.github.io/posts/用户态缺页处理\" target=\"_blank\">iam0range.github.io/posts/用户态缺页处理</a> 阅读全文。</p>",
-            "url": "iam0range.github.io/posts/用户态缺页处理",
-            "title": "用户态缺页处理",
+            "content_html": "<h1>复现</h1>\n<h1>hxpctf</h1>\n<h2>不开保护</h2>\n<p>关闭内核中所有保护,完成漏洞利用</p>\n<h3><a href=\"http://run.sh\">run.sh</a></h3>\n<p>在<code>append</code>使用使用<code>nosmap</code>、<code>nosemp</code>、`n</p>\n<br/><p>访问 <a href=\"iam0range.github.io/posts/kernel_入门\" target=\"_blank\">iam0range.github.io/posts/kernel_入门</a> 阅读全文。</p>",
+            "url": "iam0range.github.io/posts/kernel_入门",
+            "title": "kernel_入门",
             "date_modified": "2025-03-19T00:00:00.000Z",
             "date_published": "2025-03-19T00:00:00.000Z",
             "author": {

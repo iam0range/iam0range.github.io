@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>iam0range.github.io/</id>
     <title>iam0range</title>
-    <updated>2025-03-19T07:46:10.259Z</updated>
+    <updated>2025-03-19T08:04:46.259Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <author>
         <name>iam0range</name>
@@ -16,17 +16,15 @@
     <icon>iam0range.github.io/favicon.svg</icon>
     <rights>CC BY-NC-SA 4.0 2025 © iam0range</rights>
     <entry>
-        <title type="html"><![CDATA[kernel_wp]]></title>
-        <id>iam0range.github.io/posts/kernel_wp</id>
-        <link href="iam0range.github.io/posts/kernel_wp"/>
+        <title type="html"><![CDATA[kernel_pwn中uffd机制的利用]]></title>
+        <id>iam0range.github.io/posts/kernel_pwn中uffd机制的利用</id>
+        <link href="iam0range.github.io/posts/kernel_pwn中uffd机制的利用"/>
         <updated>2025-03-19T00:00:00.000Z</updated>
-        <content type="html"><![CDATA[<h1>复现</h1>
-<h1>hxpctf</h1>
-<h2>不开保护</h2>
-<p>关闭内核中所有保护,完成漏洞利用</p>
-<h3><a href="http://run.sh">run.sh</a></h3>
-<p>在<code>append</code>使用使用<code>nosmap</code>、<code>nosemp</code>、`n</p>
-<br/><p>访问 <a href="iam0range.github.io/posts/kernel_wp" target="_blank">iam0range.github.io/posts/kernel_wp</a> 阅读全文。</p>]]></content>
+        <content type="html"><![CDATA[<h1>kernel_pwn中uffd机制的利用</h1>
+<p>如何利用 Linux 的 <strong>userfaultfd</strong> 机制，在用户空间处理缺页异常（page fault）。</p>
+<hr>
+<h2></h2>
+<br/><p>访问 <a href="iam0range.github.io/posts/kernel_pwn中uffd机制的利用" target="_blank">iam0range.github.io/posts/kernel_pwn中uffd机制的利用</a> 阅读全文。</p>]]></content>
         <author>
             <name>iam0range</name>
             <email>i@valaxy.site</email>
@@ -35,16 +33,17 @@
         <published>2025-03-19T00:00:00.000Z</published>
     </entry>
     <entry>
-        <title type="html"><![CDATA[用户态缺页处理]]></title>
-        <id>iam0range.github.io/posts/用户态缺页处理</id>
-        <link href="iam0range.github.io/posts/用户态缺页处理"/>
+        <title type="html"><![CDATA[kernel_入门]]></title>
+        <id>iam0range.github.io/posts/kernel_入门</id>
+        <link href="iam0range.github.io/posts/kernel_入门"/>
         <updated>2025-03-19T00:00:00.000Z</updated>
-        <content type="html"><![CDATA[<h1>用户态缺页处理</h1>
-<p>如何利用 Linux 的 <strong>userfaultfd</strong> 机制，在用户空间处理缺页异常（page fault）。</p>
-<hr>
-<h2>1. 整体概述</h2>
-<p>代</p>
-<br/><p>访问 <a href="iam0range.github.io/posts/用户态缺页处理" target="_blank">iam0range.github.io/posts/用户态缺页处理</a> 阅读全文。</p>]]></content>
+        <content type="html"><![CDATA[<h1>复现</h1>
+<h1>hxpctf</h1>
+<h2>不开保护</h2>
+<p>关闭内核中所有保护,完成漏洞利用</p>
+<h3><a href="http://run.sh">run.sh</a></h3>
+<p>在<code>append</code>使用使用<code>nosmap</code>、<code>nosemp</code>、`n</p>
+<br/><p>访问 <a href="iam0range.github.io/posts/kernel_入门" target="_blank">iam0range.github.io/posts/kernel_入门</a> 阅读全文。</p>]]></content>
         <author>
             <name>iam0range</name>
             <email>i@valaxy.site</email>
