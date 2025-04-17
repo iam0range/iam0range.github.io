@@ -12,6 +12,18 @@
     "items": [
         {
             "id": "",
+            "content_html": "<h1>TGCTF2025-pwn-wp</h1>\n<h2>heap</h2>\n<p>菜单堆，只有 add 和 delete 函数，free 后未清空指针， 存在 uaf，size 最大为 0x80</p>\n<p>主函数开始给了</p>\n<br/><p>访问 <a href=\"iam0range.github.io/posts/TGCTF2025-PWN\" target=\"_blank\">iam0range.github.io/posts/TGCTF2025-PWN</a> 阅读全文。</p>",
+            "url": "iam0range.github.io/posts/TGCTF2025-PWN",
+            "title": "TGCTF2025-pwn-wp",
+            "date_modified": "2025-04-18T00:00:00.000Z",
+            "date_published": "2025-04-18T00:00:00.000Z",
+            "author": {
+                "name": "iam0range",
+                "url": "iam0range.github.io"
+            }
+        },
+        {
+            "id": "",
             "content_html": "<h1>kernel_pwn中uffd机制的利用</h1>\n<p>如何利用 Linux 的 <strong>userfaultfd</strong> 机制，在用户空间处理缺页异常（page fault）。</p>\n<hr>\n<h2></h2>\n<br/><p>访问 <a href=\"iam0range.github.io/posts/kernel_pwn中uffd机制的利用\" target=\"_blank\">iam0range.github.io/posts/kernel_pwn中uffd机制的利用</a> 阅读全文。</p>",
             "url": "iam0range.github.io/posts/kernel_pwn中uffd机制的利用",
             "title": "kernel_pwn中uffd机制的利用",

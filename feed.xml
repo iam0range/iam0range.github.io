@@ -4,7 +4,7 @@
         <title>iam0range</title>
         <link>iam0range.github.io/</link>
         <description>record everything</description>
-        <lastBuildDate>Sat, 22 Mar 2025 09:19:15 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 17 Apr 2025 18:43:16 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <image>
@@ -14,6 +14,18 @@
         </image>
         <copyright>CC BY-NC-SA 4.0 2025 © iam0range</copyright>
         <atom:link href="iam0range.github.io/feed.xml" rel="self" type="application/rss+xml"/>
+        <item>
+            <title><![CDATA[TGCTF2025-pwn-wp]]></title>
+            <link>iam0range.github.io/posts/TGCTF2025-PWN</link>
+            <guid>iam0range.github.io/posts/TGCTF2025-PWN</guid>
+            <pubDate>Fri, 18 Apr 2025 00:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<h1>TGCTF2025-pwn-wp</h1>
+<h2>heap</h2>
+<p>菜单堆，只有 add 和 delete 函数，free 后未清空指针， 存在 uaf，size 最大为 0x80</p>
+<p>主函数开始给了</p>
+<br/><p>访问 <a href="iam0range.github.io/posts/TGCTF2025-PWN" target="_blank">iam0range.github.io/posts/TGCTF2025-PWN</a> 阅读全文。</p>]]></content:encoded>
+            <author>i@valaxy.site (iam0range)</author>
+        </item>
         <item>
             <title><![CDATA[kernel_pwn中uffd机制的利用]]></title>
             <link>iam0range.github.io/posts/kernel_pwn中uffd机制的利用</link>

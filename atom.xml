@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>iam0range.github.io/</id>
     <title>iam0range</title>
-    <updated>2025-03-22T09:19:15.525Z</updated>
+    <updated>2025-04-17T18:43:16.124Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <author>
         <name>iam0range</name>
@@ -15,6 +15,23 @@
     <logo>http://q.qlogo.cn/headimg_dl?dst_uin=3081999683&amp;spec=640&amp;img_type=jpg</logo>
     <icon>iam0range.github.io/favicon.svg</icon>
     <rights>CC BY-NC-SA 4.0 2025 © iam0range</rights>
+    <entry>
+        <title type="html"><![CDATA[TGCTF2025-pwn-wp]]></title>
+        <id>iam0range.github.io/posts/TGCTF2025-PWN</id>
+        <link href="iam0range.github.io/posts/TGCTF2025-PWN"/>
+        <updated>2025-04-18T00:00:00.000Z</updated>
+        <content type="html"><![CDATA[<h1>TGCTF2025-pwn-wp</h1>
+<h2>heap</h2>
+<p>菜单堆，只有 add 和 delete 函数，free 后未清空指针， 存在 uaf，size 最大为 0x80</p>
+<p>主函数开始给了</p>
+<br/><p>访问 <a href="iam0range.github.io/posts/TGCTF2025-PWN" target="_blank">iam0range.github.io/posts/TGCTF2025-PWN</a> 阅读全文。</p>]]></content>
+        <author>
+            <name>iam0range</name>
+            <email>i@valaxy.site</email>
+            <uri>iam0range.github.io</uri>
+        </author>
+        <published>2025-04-18T00:00:00.000Z</published>
+    </entry>
     <entry>
         <title type="html"><![CDATA[kernel_pwn中uffd机制的利用]]></title>
         <id>iam0range.github.io/posts/kernel_pwn中uffd机制的利用</id>
